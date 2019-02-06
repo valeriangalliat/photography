@@ -1,4 +1,4 @@
-### [🌬 East Newfoundland](/2018/2018-11-20-newfoundland.md)
+# 🌬 East Newfoundland
 
 [![P2580909](/photos/hd/P2580909.jpg)](/photos/P2580909.md)
 [![P2580927](/photos/hd/P2580927.jpg)](/photos/P2580927.md)
