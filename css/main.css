@@ -2,8 +2,8 @@ body {
     padding-bottom: 50vh;
 }
 
-body.photo h1 {
-    display: none;
+body.photo {
+    text-align: center;
 }
 
 body.photo a.photo {
@@ -17,7 +17,8 @@ body.photo a.photo {
 
 body.photo table {
     display: table;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body.photo th {
@@ -34,4 +35,8 @@ body.photo td {
     max-width: 960px;
     margin: auto;
     padding-top: 1em;
+}
+
+a.home {
+    float: right;
 }
