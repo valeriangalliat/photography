@@ -17,3 +17,14 @@ if (document.title.codePointAt(0) !== document.title.charCodeAt(0)) {
   document.head.appendChild(favicon)
   document.title = document.title.substr(emoji.length + 1).trim()
 }
+
+if (location.href.endsWith('-Pano.html')) {
+  const a = document.querySelector('a')
+  const img = new Image()
+
+  img.src = a.style.backgroundImage.slice(5, -2)
+
+  img.addEventListener('load', () => {
+    a.style.width = `${img.width / img.height * innerHeight}px`
+  })
+}
