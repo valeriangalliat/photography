@@ -18,13 +18,22 @@ if (document.title.codePointAt(0) !== document.title.charCodeAt(0)) {
   document.title = document.title.substr(emoji.length + 1).trim()
 }
 
-if (location.href.endsWith('-Pano.html')) {
+if (document.body.classList.contains('photo')) {
   const a = document.querySelector('a')
   const img = new Image()
 
   img.src = a.style.backgroundImage.slice(5, -2)
 
-  img.addEventListener('load', () => {
-    a.style.width = `${img.width / img.height * innerHeight}px`
-  })
+  function onResize () {
+    const imgRatio = img.width / img.height
+
+    // Panorama
+    if (imgRatio > 16 / 9) {
+      a.style.width = `${img.width / img.height * innerHeight}px`
+      return
+    }
+  }
+
+  img.addEventListener('load', onResize)
+  addEventListener('resize', onResize)
 }

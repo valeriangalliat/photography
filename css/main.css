@@ -9,6 +9,7 @@ body.photo h1 {
 body.photo a.photo {
     display: block;
     height: 100vh;
+    background-color: #0e0e0e;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
