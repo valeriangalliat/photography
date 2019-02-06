@@ -9,6 +9,13 @@
 [![P2540952](/photos/thumb/P2540952.jpg)](/beer.md)
 [![P2580426](/photos/thumb/P2580426.jpg)](/beer.md)
 
+### [🏍 GS650](/gs650.md)
+
+[![P2570525](/photos/thumb/P2570525.jpg)](/gs650.md)
+[![P2570771](/photos/thumb/P2570771.jpg)](/gs650.md)
+[![P2570814](/photos/thumb/P2570814.jpg)](/gs650.md)
+[![P2580500](/photos/thumb/P2580500.jpg)](/gs650.md)
+
 ## December 2018
 
 ### [🦌 Mont Saint-Hilaire](/2018/2018-12-13-mont-saint-hilaire.md)
