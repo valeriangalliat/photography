@@ -1,5 +1,5 @@
-// Emoji
-if (document.title.codePointAt(0) !== document.title.charCodeAt(0)) {
+// More likely an emoji
+if (document.title.codePointAt(0) > 100) {
   const emoji = String.fromCodePoint(document.title.codePointAt(0))
   const canvas = document.createElement('canvas')
 
@@ -7,7 +7,7 @@ if (document.title.codePointAt(0) !== document.title.charCodeAt(0)) {
   canvas.width = 64
 
   const ctx = canvas.getContext('2d')
-  ctx.font = '64px serif';
+  ctx.font = '64px ' + getComputedStyle(document.body).fontFamily;
   ctx.fillText(emoji, 0, 64)
 
   const favicon = document.createElement('link')
@@ -24,16 +24,13 @@ if (document.body.classList.contains('photo')) {
 
   img.src = a.style.backgroundImage.slice(5, -2)
 
-  function onResize () {
+  img.addEventListener('load', function onResize () {
     const imgRatio = img.width / img.height
 
     // Panorama
     if (imgRatio > 16 / 9) {
       a.style.width = `${img.width / img.height * innerHeight}px`
-      return
+      addEventListener('resize', onResize)
     }
-  }
-
-  img.addEventListener('load', onResize)
-  addEventListener('resize', onResize)
+  })
 }
