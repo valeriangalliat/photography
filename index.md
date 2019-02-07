@@ -225,21 +225,21 @@
 [![P1010744](/photos/thumb/P1010744.jpg)](/2017/2017-07-06-petite-voie-du-fleuve.md)
 [![P1010907](/photos/thumb/P1010907.jpg)](/2017/2017-07-06-petite-voie-du-fleuve.md)
 
-### [🚐 Magog](/2017/2017-07-24-magog.md)
-
-[![P1000991](/photos/thumb/P1000991.jpg)](/2017/2017-07-24-magog.md)
-[![P1010276](/photos/thumb/P1010276.jpg)](/2017/2017-07-24-magog.md)
-[![P1010335](/photos/thumb/P1010335.jpg)](/2017/2017-07-24-magog.md)
-[![P1010580](/photos/thumb/P1010580.jpg)](/2017/2017-07-24-magog.md)
-
-### [🎸 Fender Stratocaster](/2017/2017-07-24-strat.md)
-
-[![P1000879](/photos/thumb/P1000879.jpg)](/2017/2017-07-24-strat.md)
-[![P1000908](/photos/thumb/P1000908.jpg)](/2017/2017-07-24-strat.md)
-[![P1000935](/photos/thumb/P1000935.jpg)](/2017/2017-07-24-strat.md)
-[![P1000936](/photos/thumb/P1000936.jpg)](/2017/2017-07-24-strat.md)
-
 ## June 2017
+
+### [🚐 Magog](/2017/2017-06-24-magog.md)
+
+[![P1000991](/photos/thumb/P1000991.jpg)](/2017/2017-06-24-magog.md)
+[![P1010276](/photos/thumb/P1010276.jpg)](/2017/2017-06-24-magog.md)
+[![P1010335](/photos/thumb/P1010335.jpg)](/2017/2017-06-24-magog.md)
+[![P1010580](/photos/thumb/P1010580.jpg)](/2017/2017-06-24-magog.md)
+
+### [🎸 Fender Stratocaster](/2017/2017-06-24-strat.md)
+
+[![P1000879](/photos/thumb/P1000879.jpg)](/2017/2017-06-24-strat.md)
+[![P1000908](/photos/thumb/P1000908.jpg)](/2017/2017-06-24-strat.md)
+[![P1000935](/photos/thumb/P1000935.jpg)](/2017/2017-06-24-strat.md)
+[![P1000936](/photos/thumb/P1000936.jpg)](/2017/2017-06-24-strat.md)
 
 ### [🚴 Lachine](/2017/2017-06-22-lachine.md)
 
