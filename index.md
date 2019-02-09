@@ -67,14 +67,21 @@
 
 [![P2580451](/photos/thumb/P2580451.jpg)](/2018/2018-10-13-tremblant.md)
 
+### [🍂 Sutton](/2018/2018-10-07-sutton.md)
+
+[![P2580027](/photos/thumb/P2580027.jpg)](/2018/2018-10-07-sutton.md)
+[![P2580038](/photos/thumb/P2580038.jpg)](/2018/2018-10-07-sutton.md)
+[![P2580104](/photos/thumb/P2580104.jpg)](/2018/2018-10-07-sutton.md)
+[![P2580168](/photos/thumb/P2580168.jpg)](/2018/2018-10-07-sutton.md)
+
 ## September 2018
 
 ### [🏍 Eastern Townships](/2018/2018-09-01-eastern-townships.md)
 
 [![P2570814](/photos/thumb/P2570814.jpg)](/2018/2018-09-01-eastern-townships.md)
+[![P2570822](/photos/thumb/P2570822.jpg)](/2018/2018-09-01-eastern-townships.md)
 [![P2570846](/photos/thumb/P2570846.jpg)](/2018/2018-09-01-eastern-townships.md)
 [![P2570855](/photos/thumb/P2570855.jpg)](/2018/2018-09-01-eastern-townships.md)
-[![P2580104](/photos/thumb/P2580104.jpg)](/2018/2018-09-01-eastern-townships.md)
 
 ## August 2018
 
@@ -147,6 +154,7 @@
 
 [![P2540731](/photos/thumb/P2540731.jpg)](/2018/2018-03-18-le-massif.md)
 [![P2540585](/photos/thumb/P2540585.jpg)](/2018/2018-03-18-le-massif.md)
+[![IMG_20180318_110954-Pano](/photos/thumb/IMG_20180318_110954-Pano.jpg)](/2018/2018-03-18-le-massif.md)
 
 ### [❄ Magog](/2018/2018-03-03-magog.md)
 

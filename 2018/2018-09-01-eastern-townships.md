@@ -1,21 +1,12 @@
 # 🏍 Eastern Townships
 
-[![P2570771](/photos/hd/P2570771.jpg)](/photos/P2570771.md)
-[![P2570814](/photos/hd/P2570814.jpg)](/photos/P2570814.md)
-[![P2570822](/photos/hd/P2570822.jpg)](/photos/P2570822.md)
+[![P2570771](/photos/hd/P2570771.jpg) *La bonne asphalte séchée au soleil des Cantons-de-l'Est pour le goûter.*](/photos/P2570771.md)
+[![P2570814](/photos/hd/P2570814.jpg) *Terre et mer.*](/photos/P2570814.md)
+[![P2570822](/photos/hd/P2570822.jpg) *Wake up view.*](/photos/P2570822.md)
+
+Hiked Owl's Head, with great views on the Lake Memphremagog and Sugar
+Loaf (I believe).
+
 [![P2570846](/photos/hd/P2570846.jpg)](/photos/P2570846.md)
 [![P2570854](/photos/hd/P2570854.jpg)](/photos/P2570854.md)
 [![P2570855](/photos/hd/P2570855.jpg)](/photos/P2570855.md)
-[![P2580027](/photos/hd/P2580027.jpg)](/photos/P2580027.md)
-[![P2580036](/photos/hd/P2580036.jpg)](/photos/P2580036.md)
-[![P2580038](/photos/hd/P2580038.jpg)](/photos/P2580038.md)
-[![P2580050](/photos/hd/P2580050.jpg)](/photos/P2580050.md)
-[![P2580054](/photos/hd/P2580054.jpg)](/photos/P2580054.md)
-[![P2580061](/photos/hd/P2580061.jpg)](/photos/P2580061.md)
-[![P2580094](/photos/hd/P2580094.jpg)](/photos/P2580094.md)
-[![P2580104](/photos/hd/P2580104.jpg)](/photos/P2580104.md)
-[![P2580114](/photos/hd/P2580114.jpg)](/photos/P2580114.md)
-[![P2580116](/photos/hd/P2580116.jpg)](/photos/P2580116.md)
-[![P2580168](/photos/hd/P2580168.jpg)](/photos/P2580168.md)
-[![Pano](/photos/hd/P2580188-Pano.jpg)](/photos/P2580188-Pano.md)
-[![P2580211](/photos/hd/P2580211.jpg)](/photos/P2580211.md)
