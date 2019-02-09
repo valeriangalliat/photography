@@ -1,7 +1,7 @@
 # 🚴 Petite Voie du Fleuve
 
-Random bike ride, going around Habitat 67, to get to the Jean Drapeau
-island, and take the bicycle trailhead after the racing track.
+Random 60 km bike ride, going around Habitat 67, to get to the Jean
+Drapeau island, and take the bicycle trailhead after the racing track.
 
 [![P1010692](/photos/hd/P1010692.jpg)](/photos/P1010692.md)
 [![P1010718](/photos/hd/P1010718.jpg)](/photos/P1010718.md)
