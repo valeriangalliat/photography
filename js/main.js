@@ -24,13 +24,15 @@ if (document.body.classList.contains('photo')) {
 
   img.src = a.style.backgroundImage.slice(5, -2)
 
-  img.addEventListener('load', function onResize () {
+  function onResize () {
     const imgRatio = img.width / img.height
 
     // Panorama
     if (imgRatio > 16 / 9) {
-      a.style.width = `${img.width / img.height * innerHeight}px`
-      addEventListener('resize', onResize)
+      a.style.width = `${img.width / img.height * document.documentElement.clientHeight}px`
     }
-  })
+  }
+
+  img.addEventListener('load', onResize)
+  addEventListener('resize', onResize)
 }
