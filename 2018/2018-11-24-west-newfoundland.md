@@ -84,3 +84,14 @@ Sunset on Beach Street, Stephenville.
 
 [![P2600266-Pano](/photos/hd/P2600266-Pano.jpg)](/photos/P2600266-Pano.md)
 [![P2600276](/photos/hd/P2600276.jpg)](/photos/P2600276.md)
+[![P2600280](/photos/hd/P2600280.jpg)](/photos/P2600280.md)
+
+Went to Cap Saint George for a hike the next day.
+
+[![P2600297](/photos/hd/P2600297.jpg)](/photos/P2600297.md)
+[![P2600310](/photos/hd/P2600310.jpg)](/photos/P2600310.md)
+[![P2600313](/photos/hd/P2600313.jpg)](/photos/P2600313.md)
+[![P2600314](/photos/hd/P2600314.jpg)](/photos/P2600314.md)
+[![P2600327](/photos/hd/P2600327.jpg)](/photos/P2600327.md)
+[![P2600332](/photos/hd/P2600332.jpg)](/photos/P2600332.md)
+[![P2600333](/photos/hd/P2600333.jpg)](/photos/P2600333.md)

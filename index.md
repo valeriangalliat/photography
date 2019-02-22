@@ -34,6 +34,13 @@
 
 ## November 2018
 
+### [🌊 East Newfoundland](/2018/2018-11-28-east-newfoundland.md)
+
+[![P2600343](/photos/thumb/P2600343.jpg)](/2018/2018-11-28-east-newfoundland.md)
+[![P2600355](/photos/thumb/P2600355.jpg)](/2018/2018-11-28-east-newfoundland.md)
+[![P2600394](/photos/thumb/P2600394.jpg)](/2018/2018-11-28-east-newfoundland.md)
+[![P2600402](/photos/thumb/P2600402.jpg)](/2018/2018-11-28-east-newfoundland.md)
+
 ### [❄ West Newfoundland](/2018/2018-11-24-west-newfoundland.md)
 
 [![P2590714](/photos/thumb/P2590714.jpg)](/2018/2018-11-24-west-newfoundland.md)
