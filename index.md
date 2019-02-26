@@ -16,6 +16,13 @@
 [![P2570814](/photos/thumb/P2570814.jpg)](/gs650.md)
 [![P2580500](/photos/thumb/P2580500.jpg)](/gs650.md)
 
+## February 2019
+
+### [⛷ Le Massif](/2019/2019-02-17-le-massif.md)
+
+[![IMG_20190217_133748-Pano](/photos/thumb/IMG_20190217_133748-Pano.jpg)](/2019/2019-02-17-le-massif.md)
+[![IMG_20190217_134515-Pano](/photos/thumb/IMG_20190217_134515-Pano.jpg)](/2019/2019-02-17-le-massif.md)
+
 ## December 2018
 
 ### [🦌 Mont Saint-Hilaire](/2018/2018-12-13-mont-saint-hilaire.md)
