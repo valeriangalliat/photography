@@ -16,6 +16,15 @@
 [![P2570814](/photos/thumb/P2570814.jpg)](/gs650.md)
 [![P2580500](/photos/thumb/P2580500.jpg)](/gs650.md)
 
+## July 2019
+
+### [🌾 Brewing](/2019/2019-07-13-brewing.md)
+
+[![P2640248](/photos/thumb/P2640248.jpg)](/2019/2019-07-13-brewing.md)
+[![P2640253](/photos/thumb/P2640253.jpg)](/2019/2019-07-13-brewing.md)
+[![P2640264](/photos/thumb/P2640264.jpg)](/2019/2019-07-13-brewing.md)
+[![P2640272](/photos/thumb/P2640272.jpg)](/2019/2019-07-13-brewing.md)
+
 ## February 2019
 
 ### [⛷ Le Massif](/2019/2019-02-17-le-massif.md)
