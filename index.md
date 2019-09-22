@@ -27,6 +27,13 @@
 
 ## April 2019
 
+### [🚲 Amsterdam](/2019/2019-04-08-amsterdam.md)
+
+[![P2610496](/photos/thumb/P2610496.jpg)](/2019/2019-04-08-amsterdam.md)
+[![P2610541](/photos/thumb/P2610541.jpg)](/2019/2019-04-08-amsterdam.md)
+[![P2610605](/photos/thumb/P2610605.jpg)](/2019/2019-04-08-amsterdam.md)
+[![P2610763](/photos/thumb/P2610763.jpg)](/2019/2019-04-08-amsterdam.md)
+
 ### [🏔 Vosges](/2019/2019-04-06-vosges.md)
 
 [![P2610357](/photos/thumb/P2610357.jpg)](/2019/2019-04-06-vosges.md)
