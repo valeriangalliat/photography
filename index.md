@@ -25,6 +25,15 @@
 [![P2640264](/photos/thumb/P2640264.jpg)](/2019/2019-07-13-brewing.md)
 [![P2640272](/photos/thumb/P2640272.jpg)](/2019/2019-07-13-brewing.md)
 
+## April 2019
+
+### [🏔 Vosges](/2019/2019-04-06-vosges.md)
+
+[![P2610357](/photos/thumb/P2610357.jpg)](/2019/2019-04-06-vosges.md)
+[![P2610360](/photos/thumb/P2610360.jpg)](/2019/2019-04-06-vosges.md)
+[![P2610375](/photos/thumb/P2610375.jpg)](/2019/2019-04-06-vosges.md)
+[![P2610403](/photos/thumb/P2610403.jpg)](/2019/2019-04-06-vosges.md)
+
 ## February 2019
 
 ### [⛷ Le Massif](/2019/2019-02-17-le-massif.md)
