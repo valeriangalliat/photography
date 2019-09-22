@@ -36,6 +36,13 @@
 
 ## February 2019
 
+### [⛄️ Rawdon](/2019/2019-02-23-rawdon.md)
+
+[![P2600938](/photos/thumb/P2600938.jpg)](/2019/2019-02-23-rawdon.md)
+[![P2600956](/photos/thumb/P2600956.jpg)](/2019/2019-02-23-rawdon.md)
+[![P2600976](/photos/thumb/P2600976.jpg)](/2019/2019-02-23-rawdon.md)
+[![P2600984](/photos/thumb/P2600984.jpg)](/2019/2019-02-23-rawdon.md)
+
 ### [⛷ Le Massif](/2019/2019-02-17-le-massif.md)
 
 [![IMG_20190217_133748-Pano](/photos/thumb/IMG_20190217_133748-Pano.jpg)](/2019/2019-02-17-le-massif.md)
