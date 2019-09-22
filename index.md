@@ -27,6 +27,18 @@
 
 ## April 2019
 
+### [🏛 Paris](/2019/2019-04-20-paris.md)
+
+[![P2620798](/photos/thumb/P2620798.jpg)](/2019/2019-04-20-paris.md)
+[![P2620810](/photos/thumb/P2620810.jpg)](/2019/2019-04-20-paris.md)
+[![P2620822](/photos/thumb/P2620822.jpg)](/2019/2019-04-20-paris.md)
+[![P2620847](/photos/thumb/P2620847.jpg)](/2019/2019-04-20-paris.md)
+
+### [🏔 Grenoble](/2019/2019-04-19-grenoble.md)
+
+[![P2620763](/photos/thumb/P2620763.jpg)](/2019/2019-04-19-grenoble.md)
+[![P2620770](/photos/thumb/P2620770.jpg)](/2019/2019-04-19-grenoble.md)
+
 ### [🇮🇹 Italy](/2019/2019-04-11-italy.md)
 
 [![P2620171](/photos/thumb/P2620171.jpg)](/2019/2019-04-11-italy.md)
