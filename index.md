@@ -16,6 +16,15 @@
 [![P2570814](/photos/thumb/P2570814.jpg)](/gs650.md)
 [![P2580500](/photos/thumb/P2580500.jpg)](/gs650.md)
 
+## September 2019
+
+### [Adirondacks](/2019/2019-09-29-adirondacks.md)
+
+[![P2650428](/photos/thumb/P2650428.jpg)](/2019/2019-09-29-adirondacks.md)
+[![P2650455](/photos/thumb/P2650455.jpg)](/2019/2019-09-29-adirondacks.md)
+[![P2650498](/photos/thumb/P2650498.jpg)](/2019/2019-09-29-adirondacks.md)
+[![P2650505](/photos/thumb/P2650505.jpg)](/2019/2019-09-29-adirondacks.md)
+
 ## July 2019
 
 ### [🌾 Brewing](/2019/2019-07-13-brewing.md)
