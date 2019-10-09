@@ -52,10 +52,6 @@
 [![P2640264](/photos/thumb/P2640264.jpg)](/2019/2019-07-13-brewing.md)
 [![P2640272](/photos/thumb/P2640272.jpg)](/2019/2019-07-13-brewing.md)
 
-## June 2019
-
-### [🦀 Gaspésie](/2019/2019-06-19-gaspesie.md)
-
 ## April 2019
 
 ### [🏛 Paris](/2019/2019-04-20-paris.md)
