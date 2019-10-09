@@ -16,6 +16,15 @@
 [![P2570814](/photos/thumb/P2570814.jpg)](/gs650.md)
 [![P2580500](/photos/thumb/P2580500.jpg)](/gs650.md)
 
+## October 2019
+
+### [Montreal, view from Busbud](/2019/2019-10-08-montreal-view-from-busbud.md)
+
+[![P2650569](/photos/thumb/P2650569.jpg)](/2019/2019-10-08-montreal-view-from-busbud.md)
+[![P2650586](/photos/thumb/P2650586.jpg)](/2019/2019-10-08-montreal-view-from-busbud.md)
+[![P2650587](/photos/thumb/P2650587.jpg)](/2019/2019-10-08-montreal-view-from-busbud.md)
+[![P2650588](/photos/thumb/P2650588.jpg)](/2019/2019-10-08-montreal-view-from-busbud.md)
+
 ## September 2019
 
 ### [Adirondacks](/2019/2019-09-29-adirondacks.md)
@@ -33,6 +42,10 @@
 [![P2640253](/photos/thumb/P2640253.jpg)](/2019/2019-07-13-brewing.md)
 [![P2640264](/photos/thumb/P2640264.jpg)](/2019/2019-07-13-brewing.md)
 [![P2640272](/photos/thumb/P2640272.jpg)](/2019/2019-07-13-brewing.md)
+
+## June 2019
+
+### [🦀 Gaspésie](/2019/2019-06-19-gaspesie.md)
 
 ## April 2019
 
