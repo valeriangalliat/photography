@@ -43,6 +43,13 @@
 [![P2650086](/photos/thumb/P2650086.jpg)](/2019/2019-08-31-indian-head-adirondacks.md)
 [![P2650124](/photos/thumb/P2650124.jpg)](/2019/2019-08-31-indian-head-adirondacks.md)
 
+### [🐠 Poisson Blanc](/2019/2019-08-18-poisson-blanc.md)
+
+[![P2640651](/photos/thumb/P2640651.jpg)](/2019/2019-08-18-poisson-blanc.md)
+[![P2640705](/photos/thumb/P2640705.jpg)](/2019/2019-08-18-poisson-blanc.md)
+[![P2640738](/photos/thumb/P2640738.jpg)](/2019/2019-08-18-poisson-blanc.md)
+[![P2640914](/photos/thumb/P2640914.jpg)](/2019/2019-08-18-poisson-blanc.md)
+
 ## July 2019
 
 ### [🐠 Poisson Blanc](/2019/2019-07-20-poisson-blanc.md)
