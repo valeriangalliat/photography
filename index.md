@@ -45,6 +45,13 @@
 
 ## July 2019
 
+### [🐠 Poisson Blanc](/2019/2019-07-20-poisson-blanc.md)
+
+[![P2640352](/photos/thumb/P2640352.jpg)](/2019/2019-07-20-poisson-blanc.md)
+[![P2640365](/photos/thumb/P2640365.jpg)](/2019/2019-07-20-poisson-blanc.md)
+[![P2640415](/photos/thumb/P2640415.jpg)](/2019/2019-07-20-poisson-blanc.md)
+[![P2640494](/photos/thumb/P2640494.jpg)](/2019/2019-07-20-poisson-blanc.md)
+
 ### [🌾 Brewing](/2019/2019-07-13-brewing.md)
 
 [![P2640248](/photos/thumb/P2640248.jpg)](/2019/2019-07-13-brewing.md)
