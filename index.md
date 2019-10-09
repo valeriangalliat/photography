@@ -27,12 +27,12 @@
 
 ## September 2019
 
-### [⛰ Adirondacks](/2019/2019-09-29-adirondacks.md)
+### [⛰ Marcy Dam (Adirondacks)](/2019/2019-09-29-marcy-dam-adirondacks.md)
 
-[![P2650428](/photos/thumb/P2650428.jpg)](/2019/2019-09-29-adirondacks.md)
-[![P2650455](/photos/thumb/P2650455.jpg)](/2019/2019-09-29-adirondacks.md)
-[![P2650498](/photos/thumb/P2650498.jpg)](/2019/2019-09-29-adirondacks.md)
-[![P2650505](/photos/thumb/P2650505.jpg)](/2019/2019-09-29-adirondacks.md)
+[![P2650428](/photos/thumb/P2650428.jpg)](/2019/2019-09-29-marcy-dam-adirondacks.md)
+[![P2650455](/photos/thumb/P2650455.jpg)](/2019/2019-09-29-marcy-dam-adirondacks.md)
+[![P2650498](/photos/thumb/P2650498.jpg)](/2019/2019-09-29-marcy-dam-adirondacks.md)
+[![P2650505](/photos/thumb/P2650505.jpg)](/2019/2019-09-29-marcy-dam-adirondacks.md)
 
 ## August 2019
 
