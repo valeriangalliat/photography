@@ -1,4 +1,4 @@
-# Adirondacks
+# ⛰ Adirondacks
 
 [![P2650410](/photos/hd/P2650410.jpg)](/photos/P2650410.md)
 [![P2650428](/photos/hd/P2650428.jpg)](/photos/P2650428.md)

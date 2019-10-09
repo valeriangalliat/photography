@@ -1,4 +1,4 @@
-# Montreal, view from Busbud
+# 🍁 Montreal, view from Busbud
 
 So glad I've been enjoying that extraordinary view of the city from the
 Busbud office for the past 4 years!

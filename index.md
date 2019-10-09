@@ -18,7 +18,7 @@
 
 ## October 2019
 
-### [Montreal, view from Busbud](/2019/2019-10-08-montreal-view-from-busbud.md)
+### [🍁 Montreal, view from Busbud](/2019/2019-10-08-montreal-view-from-busbud.md)
 
 [![P2650569](/photos/thumb/P2650569.jpg)](/2019/2019-10-08-montreal-view-from-busbud.md)
 [![P2650586](/photos/thumb/P2650586.jpg)](/2019/2019-10-08-montreal-view-from-busbud.md)
@@ -27,12 +27,21 @@
 
 ## September 2019
 
-### [Adirondacks](/2019/2019-09-29-adirondacks.md)
+### [⛰ Adirondacks](/2019/2019-09-29-adirondacks.md)
 
 [![P2650428](/photos/thumb/P2650428.jpg)](/2019/2019-09-29-adirondacks.md)
 [![P2650455](/photos/thumb/P2650455.jpg)](/2019/2019-09-29-adirondacks.md)
 [![P2650498](/photos/thumb/P2650498.jpg)](/2019/2019-09-29-adirondacks.md)
 [![P2650505](/photos/thumb/P2650505.jpg)](/2019/2019-09-29-adirondacks.md)
+
+## August 2019
+
+### [⛰ Indian Head (Adirondacks)](/2019/2019-08-31-indian-head-adirondacks.md)
+
+[![P2650052](/photos/thumb/P2650052.jpg)](/2019/2019-08-31-indian-head-adirondacks.md)
+[![P2650056](/photos/thumb/P2650056.jpg)](/2019/2019-08-31-indian-head-adirondacks.md)
+[![P2650086](/photos/thumb/P2650086.jpg)](/2019/2019-08-31-indian-head-adirondacks.md)
+[![P2650124](/photos/thumb/P2650124.jpg)](/2019/2019-08-31-indian-head-adirondacks.md)
 
 ## July 2019
 
