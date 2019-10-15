@@ -18,6 +18,13 @@
 
 ## October 2019
 
+### [🌲 Chalet](/2019/2019-10-13-chalet.md)
+
+[![P2650826](/photos/thumb/P2650826.jpg)](/2019/2019-10-13-chalet.md)
+[![P2650863](/photos/thumb/P2650863.jpg)](/2019/2019-10-13-chalet.md)
+[![P2650888](/photos/thumb/P2650888.jpg)](/2019/2019-10-13-chalet.md)
+[![P2650921](/photos/thumb/P2650921.jpg)](/2019/2019-10-13-chalet.md)
+
 ### [🍁 Montreal, view from Busbud](/2019/2019-10-08-montreal-view-from-busbud.md)
 
 [![P2650569](/photos/thumb/P2650569.jpg)](/2019/2019-10-08-montreal-view-from-busbud.md)
