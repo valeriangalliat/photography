@@ -18,7 +18,7 @@
 
 ## October 2019
 
-### [Ping Pong IPA](/2019/2019-10-15-ping-pong-ipa.md)
+### [🏓 Ping Pong IPA](/2019/2019-10-15-ping-pong-ipa.md)
 
 [![P2650973](/photos/thumb/P2650973.jpg)](/2019/2019-10-15-ping-pong-ipa.md)
 [![P2650979](/photos/thumb/P2650979.jpg)](/2019/2019-10-15-ping-pong-ipa.md)
