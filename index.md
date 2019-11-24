@@ -18,6 +18,12 @@
 
 ## October 2019
 
+### [Ping Pong IPA](/2019/2019-10-15-ping-pong-ipa.md)
+
+[![P2650973](/photos/thumb/P2650973.jpg)](/2019/2019-10-15-ping-pong-ipa.md)
+[![P2650979](/photos/thumb/P2650979.jpg)](/2019/2019-10-15-ping-pong-ipa.md)
+[![P2660025](/photos/thumb/P2660025.jpg)](/2019/2019-10-15-ping-pong-ipa.md)
+
 ### [🌲 Chalet](/2019/2019-10-13-chalet.md)
 
 [![P2650826](/photos/thumb/P2650826.jpg)](/2019/2019-10-13-chalet.md)
