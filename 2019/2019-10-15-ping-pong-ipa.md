@@ -1,4 +1,4 @@
-# 🏓Ping Pong IPA
+# 🏓 Ping Pong IPA
 
 This was my last week working at Busbud, so as a tribute, I took a
 couple of my classic beer shots with the view from the office!
