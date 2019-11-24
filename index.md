@@ -73,6 +73,15 @@
 [![P2640264](/photos/thumb/P2640264.jpg)](/2019/2019-07-13-brewing.md)
 [![P2640272](/photos/thumb/P2640272.jpg)](/2019/2019-07-13-brewing.md)
 
+## June 2019
+
+### [🦀 Gaspésie](/2019/2019-06-19-gaspesie.md)
+
+[![P2630244](/photos/thumb/P2630244.jpg)](/2019/2019-06-19-gaspesie.md)
+[![P2630568](/photos/thumb/P2630568.jpg)](/2019/2019-06-19-gaspesie.md)
+[![P2630808](/photos/thumb/P2630808.jpg)](/2019/2019-06-19-gaspesie.md)
+[![P2640104](/photos/thumb/P2640104.jpg)](/2019/2019-06-19-gaspesie.md)
+
 ## April 2019
 
 ### [🏛 Paris](/2019/2019-04-20-paris.md)
