@@ -199,9 +199,7 @@ Always drinking local, this Cuivrée au thé by La Barberie on top of Mont
 Albert in the middle of Gaspesie National Park.
 
 [![P2630655](/photos/hd/P2630655.jpg)](/photos/P2630655.md)
-[![P2630658](/photos/hd/P2630658.jpg)](/photos/P2630658.md)
 [![P2630667](/photos/hd/P2630667.jpg)](/photos/P2630667.md)
-[![P2630670](/photos/hd/P2630670.jpg)](/photos/P2630670.md)
 [![P2630672](/photos/hd/P2630672.jpg)](/photos/P2630672.md)
 
 ## June 25, 2019, Mont Sainte-Anne, Gaspésie
@@ -224,8 +222,6 @@ have a view though because the fog is super thick. The Kiwiberry by Le
 Naufrageur, brewery of the same city. Extremely good smoothie ale with
 kiwi and strawberries.
 
-[![P2640222](/photos/hd/P2640222.jpg)](/photos/P2640222.md)
-[![P2640226](/photos/hd/P2640226.jpg)](/photos/P2640226.md)
 [![P2640232](/photos/hd/P2640232.jpg)](/photos/P2640232.md)
 
 ## July 20, 2019, Poisson Blanc
