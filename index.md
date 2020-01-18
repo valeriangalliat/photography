@@ -29,13 +29,6 @@ setup is definitely worth the tradeoff.
 [![P2540952](/photos/thumb/P2540952.jpg)](/beer.md)
 [![P2580426](/photos/thumb/P2580426.jpg)](/beer.md)
 
-### [🏍 GS650](/gs650.md)
-
-[![P2570525](/photos/thumb/P2570525.jpg)](/gs650.md)
-[![P2570771](/photos/thumb/P2570771.jpg)](/gs650.md)
-[![P2570814](/photos/thumb/P2570814.jpg)](/gs650.md)
-[![P2580500](/photos/thumb/P2580500.jpg)](/gs650.md)
-
 ## October 2019
 
 ### [🏓 Ping Pong IPA](/2019/2019-10-15-ping-pong-ipa.md)
