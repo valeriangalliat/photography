@@ -33,6 +33,10 @@ body.photo td {
     padding: 1em 1em 50vh 1em;
 }
 
+.markdown-body img {
+    height: auto;
+}
+
 a.home {
     float: right;
 }
