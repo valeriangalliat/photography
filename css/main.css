@@ -30,7 +30,7 @@ body.photo td {
 .markdown-body {
     max-width: 960px;
     margin: auto;
-    padding: 1em 1em 50vh 1em;
+    padding: 1em .5em 50vh .5em;
 }
 
 .markdown-body img {
