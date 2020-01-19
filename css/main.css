@@ -37,6 +37,28 @@ body.photo td {
     height: auto;
 }
 
+body.home img {
+    max-width: 24%;
+}
+
+@media all and (max-width: 700px) {
+    body.home img {
+        max-width: 32%;
+    }
+}
+
+@media all and (max-width: 525px) {
+    body.home img {
+        max-width: 49%;
+    }
+}
+
+@media all and (max-width: 350px) {
+    body.home img {
+        max-width: 100%;
+    }
+}
+
 a.home {
     float: right;
 }
