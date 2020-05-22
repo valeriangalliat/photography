@@ -29,6 +29,22 @@ setup is definitely worth the tradeoff.
 [![P2540952](/photos/thumb/P2540952.jpg)](/beer.md)
 [![P2580426](/photos/thumb/P2580426.jpg)](/beer.md)
 
+## May 2020
+
+### [⛰ Ouareau Summit](/2020/2020-05-20-ouareau-summit.md)
+
+[![P2680620-Pano-0](/photos/thumb/P2680620-Pano-0.jpg)](/2020/2020-05-20-ouareau-summit.md)
+[![P2680620-Pano-1](/photos/thumb/P2680620-Pano-1.jpg)](/2020/2020-05-20-ouareau-summit.md)
+
+## February 2020
+
+### [⛷ Backcountry Tremblant](/2020/2020-02-05-backcountry-tremblant.md)
+
+[![P2660765](/photos/thumb/P2660765.jpg)](/2020/2020-02-05-backcountry-tremblant.md)
+[![P2660779](/photos/thumb/P2660779.jpg)](/2020/2020-02-05-backcountry-tremblant.md)
+[![P2660792](/photos/thumb/P2660792.jpg)](/2020/2020-02-05-backcountry-tremblant.md)
+[![P2660833-2](/photos/thumb/P2660833-2.jpg)](/2020/2020-02-05-backcountry-tremblant.md)
+
 ## October 2019
 
 ### [🏓 Ping Pong IPA](/2019/2019-10-15-ping-pong-ipa.md)

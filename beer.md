@@ -1,5 +1,29 @@
 # 🍺 Beer
 
+## February 5, 2020, Tremblant
+
+Yéti caché.
+
+[![P2660773](/photos/hd/P2660773.jpg)](/photos/P2660773.md)
+
+Yéti dégagé.
+
+[![P2660775](/photos/hd/P2660775.jpg)](/photos/P2660775.md)
+
+Yéti 2:3.
+
+[![P2660779](/photos/hd/P2660779.jpg)](/photos/P2660779.md)
+
+Yéti Atomic.
+
+[![P2660783](/photos/hd/P2660783.jpg)](/photos/P2660783.md)
+[![P2660786](/photos/hd/P2660786.jpg)](/photos/P2660786.md)
+
+Moar beer is always nice. Blonde d'été en plein hiver.
+
+[![P2660839](/photos/hd/P2660839.jpg)](/photos/P2660839.md)
+[![P2660847](/photos/hd/P2660847.jpg)](/photos/P2660847.md)
+
 ## October 15, 2019, Busbud
 
 Ping Pong IPA by Pixel microbrewery, from the Busbud office during my
