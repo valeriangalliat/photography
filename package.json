@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "photograph": "valeriangalliat/photograph"
+    "photograph": "github:valeriangalliat/photograph"
   }
 }
