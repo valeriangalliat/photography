@@ -1,4 +1,12 @@
-body.photo {
+html {
+    font-family: sans-serif;
+}
+
+.markdown-body {
+    max-width: 100ch;
+}
+
+body.photo .markdown-body {
     text-align: center;
 }
 
@@ -27,14 +35,12 @@ body.photo td {
     text-align: left;
 }
 
-.markdown-body {
-    max-width: 960px;
-    margin: auto;
-    padding: 1em .5em 50vh .5em;
-}
-
 .markdown-body img {
     height: auto;
+}
+
+body.photo .markdown-body {
+    padding-top: 1em;
 }
 
 body.home img {
