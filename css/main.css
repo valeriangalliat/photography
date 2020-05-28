@@ -68,3 +68,7 @@ body.home img {
 a.home {
     float: right;
 }
+
+footer {
+    text-align: center;
+}
