@@ -5,8 +5,8 @@ website most of the pictures that I took since I got my camera in 2017.
 
 I shoot with a Panasonic LX100 because it's lightweight and compact
 while still having manual controls for most settings I care about (and
-also the fact it shoots 4K video even that's irrelevant for what you'll
-see on this website).
+also the fact it shoots 4K video even though that's irrelevant for what
+you'll see on this website).
 
 This allows me to take it with me pretty much everywhere without it
 being a big commitment, and I can carry it strapped around my chest
