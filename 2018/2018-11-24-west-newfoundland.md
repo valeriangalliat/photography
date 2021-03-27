@@ -1,4 +1,5 @@
 # ❄ West Newfoundland
+November 2018
 
 Deer Lake Beach.
 

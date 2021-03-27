@@ -1,4 +1,5 @@
 # ⛰ Indian Head (Adirondacks)
+August 2019
 
 [![P2640992](/photos/hd/P2640992.jpg)](/photos/P2640992.md)
 [![P2650052](/photos/hd/P2650052.jpg)](/photos/P2650052.md)

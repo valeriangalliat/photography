@@ -1,4 +1,5 @@
 # 🐠 Poisson Blanc
+June 2018
 
 One more trip to the Poisson Blanc! This time at the [Katimavik](http://poissonblanc.ca/en/site/34-le-katimavik/).
 

@@ -1,4 +1,5 @@
 # 🍾 Embouteillage
+December 2018
 
 Embouteillage et étiquetage de la Session NEIPAnanas, qui devrait
 maturer jusqu'à Noël.

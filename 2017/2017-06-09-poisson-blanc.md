@@ -1,4 +1,5 @@
 # 🐠 Poisson Blanc
+June 2017
 
 In early June 2017, we went to the [Lac du Poisson-Blanc](http://poissonblanc.ca/en/),
 where you can rent an island on the lake and go camp there, getting to
