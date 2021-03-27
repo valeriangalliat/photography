@@ -1,0 +1,46 @@
+#!/bin/sh -e
+
+export PROGDIR=$(dirname "$(realpath "$0")")
+
+init() {
+    mkdir -p photos/full photos/hd photos/thumb css js
+    cp "$PROGDIR/template/foot.html" foot.html
+    cp "$PROGDIR/template/index.md" index.md
+}
+
+md() {
+    sed -E -f "$PROGDIR/md.sed" "$@"
+}
+
+build() {
+    make -f "$PROGDIR/Makefile" build -j8
+}
+
+orphans() {
+    if [ "$1" = "rm" ]; then
+        for orphan in $(make -f "$PROGDIR/Makefile" orphans); do
+            [ -f "photos/full/$orphan" ] && rm -i "photos/full/$orphan"
+            [ -f "photos/hd/$orphan" ] && rm -i "photos/hd/$orphan"
+            [ -f "photos/thumb/$orphan" ] && rm -i "photos/thumb/$orphan"
+
+            html=photos/$(echo "$orphan" | sed 's/\.[^\.]*$/.html/')
+            [ -f "$html" ] && rm -i "$html"
+        done
+
+        return
+    fi
+
+    make -f "$PROGDIR/Makefile" orphans
+}
+
+missing() {
+    make -f "$PROGDIR/Makefile" missing
+}
+
+new() {
+    "$PROGDIR/new" "$@"
+}
+
+command=$1; shift
+
+"$command" "$@"

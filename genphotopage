@@ -1,0 +1,67 @@
+#!/usr/bin/env node
+
+const { exiftool } = require('exiftool-vendored')
+const fs = require('fs')
+const path = require('path')
+
+const photo = process.argv[2]
+const name = path.basename(photo).split('.')[0]
+
+const head = fs.readFileSync(path.resolve(__dirname, 'head.html'), 'utf8')
+  .replace('<title>', `<title>📷 ${name}`)
+  .replace('<body class="markdown-body">', '<body class="photo">')
+
+const preFoot = fs.readFileSync('foot.html', 'utf8')
+const foot = fs.readFileSync(path.resolve(__dirname, 'foot.html'), 'utf8')
+
+exiftool.read(photo)
+  .then(exif => {
+    process.stdout.write(head)
+    process.stdout.write(`  <a class="photo" href="/photos/full/${name}.jpg" style="background-image: url(/photos/hd/${name}.jpg)"></a>
+  <div class="markdown-body">
+    <table>
+      <tr>
+        <th>Name</th>
+        <td>${name}</td>
+      </tr>
+      <tr>
+        <th>Date</th>
+        <td>${exif.DateTimeOriginal.toISOString().split('.')[0]}</td>
+      </tr>
+      <tr>
+        <th>Make</th>
+        <td>${exif.Make}</td>
+      </tr>
+      <tr>
+        <th>Model</th>
+        <td>${exif.Model}</td>
+      </tr>
+      <tr>
+        <th>Focal length</th>
+        <td>${exif.FocalLength}</td>
+      </tr>
+      <tr>
+        <th>Focal length (35 mm equivalent)</th>
+        <td>${exif.FocalLengthIn35mmFormat}</td>
+      </tr>
+      <tr>
+        <th>Aperture</th>
+        <td>${exif.Aperture}</td>
+      </tr>
+      <tr>
+        <th>Shutter speed</th>
+        <td>${exif.ShutterSpeed}</td>
+      </tr>
+      <tr>
+        <th>ISO</th>
+        <td>${exif.ISO}</td>
+      </tr>
+    </table>
+    <p><a href="/">Home</a></p>
+    ${preFoot}
+  </div>
+`)
+    process.stdout.write(foot)
+
+    return exiftool.end()
+  })

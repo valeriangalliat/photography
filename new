@@ -1,0 +1,33 @@
+#!/bin/sh -e
+
+printf "Title: " >&2
+read title
+
+printf "Path (e.g. 2019/2019-07-20-foo): " >&2
+read path
+
+dir=$(mktemp -d)
+
+echo "Put all the photos you want to add in this directory, then press enter..." >&2
+open "$dir"
+read
+
+echo "### [$title](/$path.md)"
+echo
+
+for photo in $(find "$dir" -type f | awk -F/ '{print $NF;}' | sort); do
+    name=$(echo "$photo" | sed 's/\.[^\.]*$//')
+    echo "[![$name](/photos/thumb/$photo)](/$path.md)"
+done
+
+echo
+echo "# $title"
+echo
+
+for photo in $(find "$dir" -type f | awk -F/ '{print $NF;}' | sort); do
+    name=$(echo "$photo" | sed 's/\.[^\.]*$//')
+    echo "[![$name](/photos/hd/$photo)](/photos/$name.md)"
+done
+
+mv -v "$dir"/* photos/full
+rmdir "$dir"
