@@ -1,15 +1,9 @@
 #!/bin/sh -e
 
-if head -1 "$1" | grep -q '^#'; then
-    title=$(head -1 "$1" | sed 's/^..//')
-fi
+title=$(head -1 "$1" | sed 's/^# //')
 
 convert_links() {
     sed 's/\.md"/.html"/g'
-}
-
-add_home() {
-    sed 's,<h1,<header class="home"><a href="/">Home</a></header><h1,'
 }
 
 add_size() {
@@ -28,20 +22,26 @@ add_body_class() {
     cat
 }
 
+add_date_class() {
+    cat
+}
+
 marked() {
     ./node_modules/.bin/marked "$@"
 }
 
 if [ "$1" = index.md ]; then
-    add_home() {
-        cat
-    }
-
     add_body_class() {
-        sed 's/<body class="markdown-body">/<body class="markdown-body home">/'
+        sed 's/<body>/<body class="home">/'
     }
 fi
 
-cat "head.html" | sed "s/<title>/<title>$title/" | add_body_class
-marked "$1" | convert_links | add_home | add_size
+if [[ "$1" = 20* ]]; then
+    add_date_class() {
+        sed '1,/<p>/s/<p>/<p class="date">/'
+    }
+fi
+
+cat "head.html" | sed "1,/<title>/s/<title>/<title>$title/" | add_body_class
+marked "$1" | add_date_class | convert_links | add_size
 cat "foot.html"

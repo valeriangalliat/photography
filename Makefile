@@ -4,7 +4,8 @@ PHOTOS_THUMB = $(PHOTOS_FULL:dist/photos/full/%=dist/photos/thumb/%)
 PHOTOS_HTML = $(PHOTOS_FULL:dist/photos/full/%.jpg=dist/photos/%.html)
 MD = $(shell find . -name '*.md' ! -path './node_modules/*' ! -path './dist/*' ! -path './README.md' | sed 's,^./,,')
 HTML = $(MD:%.md=dist/%.html)
-ASSETS = dist/css/normalize.css dist/css/codejam.css dist/css/main.css dist/js/main.js
+ICONS = dist/img/icons/403-instagram.svg dist/img/icons/407-twitter.svg dist/img/icons/414-youtube.svg dist/img/icons/433-github.svg dist/img/icons/452-soundcloud.svg dist/img/icons/458-linkedin.svg
+ASSETS = dist/css/normalize.css dist/css/codejam.css dist/css/main.css dist/js/main.js $(ICONS)
 
 build: dist $(PHOTOS_HD) $(PHOTOS_THUMB) $(PHOTOS_HTML) $(HTML) $(ASSETS)
 
@@ -51,14 +52,18 @@ dist/css/codejam.css:
 	curl \
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/base.css \
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/footer.css \
-		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/home.css \
-		| sed 's/^body {$$/.markdown-body {/' > $@
+		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/header.css \
+		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/nav.css \
+		| sed 's/^\.content {$$/.markdown-body {/' > $@
 
 dist/css/main.css: css/main.css
 	cp $< $@
 
 dist/js/main.js: js/main.js
 	cp $< $@
+
+dist/img/icons/%.svg: node_modules/icomoon-free-npm/SVG/%.svg
+	cat $< | sed 's/<svg /<svg id="icon" /;s/fill="#000000"/style="fill: var(--color-fill)"/' > $@
 
 serve:
 	cd dist; if python --version 2>&1 | grep -q 'Python 2'; then python -m SimpleHTTPServer 8001; else python -m http.server 8001; fi

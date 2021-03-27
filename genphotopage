@@ -9,16 +9,29 @@ const name = path.basename(photo).split('.')[0]
 
 const head = fs.readFileSync(path.resolve(__dirname, 'head.html'), 'utf8')
   .replace('<title>', `<title>📷 ${name}`)
-  .replace('<body class="markdown-body">', '<body class="photo">')
+  .replace('<body>', '<body class="photo">')
 
 const foot = fs.readFileSync('foot.html', 'utf8')
 
 exiftool.read(photo)
   .then(exif => {
-    process.stdout.write(head)
-    process.stdout.write(`  <a class="photo" href="/photos/full/${name}.jpg" style="background-image: url(/photos/hd/${name}.jpg)"></a>
-  <div class="markdown-body">
-    <table>
+    let style = ``
+
+    if (exif.ImageWidth / exif.ImageHeight > 16 / 9) {
+      // Allow image to overflow for panoramas.
+      style = `style="max-width: none"`
+    }
+
+    process.stdout.write(head.replace(
+      '<div class="markdown-body">',
+      `<div class="photo-container">
+    <a href="/photos/full/${name}.jpg">
+      <img src="/photos/hd/${name}.jpg"${style}>
+    </a>
+  </div>
+  <div class="markdown-body">`))
+
+    process.stdout.write(`    <table>
       <tr>
         <th>Name</th>
         <td>${name}</td>
@@ -56,9 +69,9 @@ exiftool.read(photo)
         <td>${exif.ISO}</td>
       </tr>
     </table>
-    <p><a href="/">Home</a></p>
-    `)
-    process.stdout.write(foot.replace('</footer>', '</footer>\n\n  </div>'))
+`)
+
+    process.stdout.write(foot)
 
     return exiftool.end()
   })

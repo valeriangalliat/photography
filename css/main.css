@@ -1,74 +1,119 @@
 html {
-    font: 1em/normal sans-serif;
+    font: 1em/1.5 "Helvetica Neue", sans-serif;
+}
+
+header, footer {
+    /* Match the blog font size to keep the header and footer consistent. */
+    font-size: 1.25em;
+}
+
+header {
+    margin-bottom: 6em;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    margin: 1em 0;
+}
+
+h2 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.date {
+    color: #bbb;
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: -2em;
+    margin-bottom: 2em;
 }
 
 .markdown-body {
     max-width: 100ch;
 }
 
-body.photo .markdown-body {
-    text-align: center;
-}
-
-body.photo a.photo {
-    display: block;
-    height: 100vh;
-    background-color: #0e0e0e;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-body.photo table {
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-body.photo th {
-    width: 50%;
-    text-align: right;
-}
-
-body.photo td {
-    width: 50%;
-    text-align: left;
-}
-
 .markdown-body img {
     height: auto;
 }
 
-body.photo .markdown-body {
-    padding-top: 1em;
-}
-
-body.home img {
+.home img {
     max-width: 24%;
 }
 
 @media all and (max-width: 700px) {
-    body.home img {
+    .home img {
         max-width: 32%;
     }
 }
 
 @media all and (max-width: 525px) {
-    body.home img {
+    .home img {
         max-width: 49%;
     }
 }
 
 @media all and (max-width: 350px) {
-    body.home img {
+    .home img {
         max-width: 100%;
     }
 }
 
-a.home {
-    float: right;
+.photo header {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 200ms;
+    background: white;
 }
 
-footer {
+.photo header:hover {
+    opacity: 1;
+}
+
+.photo .header-inner {
+    padding-bottom: 1em;
+}
+
+.photo .markdown-body {
     text-align: center;
+}
+
+.photo-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 2rem;
+    background-color: #0e0e0e;
+    height: 100vh;
+}
+
+.photo-container a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.photo-container img {
+    display: block;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.photo table {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo th {
+    width: 50%;
+    text-align: right;
+}
+
+.photo td {
+    width: 50%;
+    text-align: left;
 }

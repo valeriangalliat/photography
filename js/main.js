@@ -153,22 +153,3 @@ if (document.title.codePointAt(0) > 100) {
 
   document.title = document.title.substr(emoji.length + 1).trim()
 }
-
-if (document.body.classList.contains('photo')) {
-  const a = document.querySelector('a')
-  const img = new Image()
-
-  img.src = a.style.backgroundImage.slice(5, -2)
-
-  function onResize () {
-    const imgRatio = img.width / img.height
-
-    // Panorama.
-    if (imgRatio > 16 / 9) {
-      a.style.width = `${img.width / img.height * document.documentElement.clientHeight}px`
-    }
-  }
-
-  img.addEventListener('load', onResize)
-  addEventListener('resize', onResize)
-}
