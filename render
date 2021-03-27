@@ -16,7 +16,7 @@ add_size() {
     while read line; do
         for pattern in $(echo "$line" | grep -o 'src="[^"]*.jpg"'); do
             file=$(echo "$pattern" | awk -F'"' '{print $2}')
-            attrs=$(identify "./$file" | awk '{print $3}' | sed 's/^/width="/;s/x/" height="/;s/$/"/')
+            attrs=$(identify "dist/$file" | awk '{print $3}' | sed 's/^/width="/;s/x/" height="/;s/$/"/')
             line=$(echo "$line" | sed "s,$pattern,$pattern $attrs,g")
         done
 
@@ -29,11 +29,7 @@ add_body_class() {
 }
 
 marked() {
-    if [ -d "$PROGDIR/node_modules" ]; then
-        "$PROGDIR/node_modules/.bin/marked" "$@"
-    else
-        "$PROGDIR/../.bin/marked" "$@"
-    fi
+    ./node_modules/.bin/marked "$@"
 }
 
 if [ "$1" = index.md ]; then
@@ -46,7 +42,6 @@ if [ "$1" = index.md ]; then
     }
 fi
 
-cat "$PROGDIR/head.html" | sed "s/<title>/<title>$title/" | add_body_class
+cat "head.html" | sed "s/<title>/<title>$title/" | add_body_class
 marked "$1" | convert_links | add_home | add_size
 cat "foot.html"
-cat "$PROGDIR/foot.html"

@@ -1,13 +1,22 @@
-NM = $(shell if [ -d "$(PROGDIR)/node_modules" ]; then echo "$(PROGDIR)/node_modules"; else echo "$(PROGDIR)/.."; fi)
-PHOTOS_FULL = $(shell find photos/full -name '*.jpg')
-PHOTOS_HD = $(PHOTOS_FULL:photos/full/%=photos/hd/%)
-PHOTOS_THUMB = $(PHOTOS_FULL:photos/full/%=photos/thumb/%)
-PHOTOS_HTML = $(PHOTOS_FULL:photos/full/%.jpg=photos/%.html)
-MD = $(shell find . -name '*.md' ! -path './node_modules/*' ! -path './photos/*' ! -path ./README.md -printf '%P\n')
-HTML = $(MD:%.md=%.html)
-ASSETS = css/normalize.css css/codejam.css css/main.css js/main.js
+PHOTOS_FULL = $(shell find dist/photos/full -name '*.jpg')
+PHOTOS_HD = $(PHOTOS_FULL:dist/photos/full/%=dist/photos/hd/%)
+PHOTOS_THUMB = $(PHOTOS_FULL:dist/photos/full/%=dist/photos/thumb/%)
+PHOTOS_HTML = $(PHOTOS_FULL:dist/photos/full/%.jpg=dist/photos/%.html)
+MD = $(shell find . -name '*.md' ! -path './node_modules/*' ! -path './dist/*' ! -path './README.md' | sed 's,^./,,')
+HTML = $(MD:%.md=dist/%.html)
+ASSETS = dist/css/normalize.css dist/css/codejam.css dist/css/main.css dist/js/main.js
 
-build: $(PHOTOS_HD) $(PHOTOS_THUMB) $(PHOTOS_HTML) $(HTML) $(ASSETS)
+build: dist $(PHOTOS_HD) $(PHOTOS_THUMB) $(PHOTOS_HTML) $(HTML) $(ASSETS)
+
+dist:
+	git worktree add dist gh-pages
+
+clean:
+	# Purposedly not cleaning generated photos, do it manually if you really need.
+	rm -f $(HTML) $(ASSETS)
+
+clean-html:
+	rm -f $(HTML)
 
 orphans: .photos .references
 	@comm -23 .photos .references
@@ -23,30 +32,33 @@ missing: .photos .references
 .references: $(MD)
 	@grep --no-filename -o '[^/]*\.jpg' $^ | sort | uniq > $@
 
-photos/hd/%.jpg: photos/full/%.jpg
+dist/photos/hd/%.jpg: dist/photos/full/%.jpg
 	convert $< -resize 1920x1080^ $@
 
-photos/thumb/%.jpg: photos/full/%.jpg
+dist/photos/thumb/%.jpg: dist/photos/full/%.jpg
 	convert $< -resize 300x200^ -gravity center -extent 300x200 $@
 
-photos/%.html: photos/full/%.jpg
-	$(PROGDIR)/genphotopage $< > $@
+dist/photos/%.html: dist/photos/full/%.jpg head.html foot.html
+	./genphotopage $< > $@
 
-%.html: %.md | $(PHOTOS_HD) $(PHOTOS_THUMB)
-	$(PROGDIR)/render $< > $@
+dist/%.html: %.md head.html foot.html | $(PHOTOS_HD) $(PHOTOS_THUMB)
+	./render $< > $@
 
-css/normalize.css: $(NM)/normalize.css/normalize.css
+dist/css/normalize.css: node_modules/normalize.css/normalize.css
 	cp $< $@
 
-css/codejam.css:
+dist/css/codejam.css:
 	curl \
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/base.css \
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/footer.css \
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/home.css \
 		| sed 's/^body {$$/.markdown-body {/' > $@
 
-css/main.css: $(PROGDIR)/main.css
+dist/css/main.css: css/main.css
 	cp $< $@
 
-js/main.js: $(PROGDIR)/main.js
+dist/js/main.js: js/main.js
 	cp $< $@
+
+serve:
+	cd dist; if python --version 2>&1 | grep -q 'Python 2'; then python -m SimpleHTTPServer 8001; else python -m http.server 8001; fi

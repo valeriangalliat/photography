@@ -11,8 +11,7 @@ const head = fs.readFileSync(path.resolve(__dirname, 'head.html'), 'utf8')
   .replace('<title>', `<title>📷 ${name}`)
   .replace('<body class="markdown-body">', '<body class="photo">')
 
-const preFoot = fs.readFileSync('foot.html', 'utf8')
-const foot = fs.readFileSync(path.resolve(__dirname, 'foot.html'), 'utf8')
+const foot = fs.readFileSync('foot.html', 'utf8')
 
 exiftool.read(photo)
   .then(exif => {
@@ -58,10 +57,8 @@ exiftool.read(photo)
       </tr>
     </table>
     <p><a href="/">Home</a></p>
-    ${preFoot}
-  </div>
-`)
-    process.stdout.write(foot)
+    `)
+    process.stdout.write(foot.replace('</footer>', '</footer>\n\n  </div>'))
 
     return exiftool.end()
   })

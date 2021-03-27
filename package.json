@@ -1,9 +1,4 @@
 {
-  "name": "photograph",
-  "version": "2.1.0",
-  "bin": {
-    "photograph": "photograph"
-  },
   "scripts": {
     "lint": "standard"
   },
