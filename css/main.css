@@ -12,27 +12,30 @@ header {
 }
 
 h1 {
-    font-size: 4em;
     text-align: center;
     margin: 1em 0;
 }
 
-h2 {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 1rem;
-}
-
 .date {
     color: #bbb;
-    font-size: 2em;
     font-weight: lighter;
     text-align: center;
     margin-top: -2em;
     margin-bottom: 2em;
 }
 
+@media not all and (max-width: 42em) {
+    h1 {
+        font-size: 4em;
+    }
+
+    .date {
+        font-size: 2em;
+    }
+}
+
 .markdown-body {
-    max-width: 100ch;
+    max-width: 60rem;
 }
 
 .markdown-body img {
@@ -43,34 +46,27 @@ h2 {
     max-width: 24%;
 }
 
-@media all and (max-width: 700px) {
-    .home img {
-        max-width: 32%;
-    }
-}
-
-@media all and (max-width: 525px) {
+/* Images are 300px and we have 16px of padding around the content. I also
+ * leave 5px of extra room per image for the following space. Finally I add
+ * 16px of extra padding so that the images don't readjust right when they
+ * reach their max size.
+ *
+ * So effectively this is `(300 + 5) * 2 + 16 + 16`. */
+@media all and (max-width: 642px) {
     .home img {
         max-width: 49%;
     }
 }
 
-@media all and (max-width: 350px) {
+/* Same rule as above, `(300 + 5) * 1 + 16 + 16`. */
+@media all and (max-width: 337px) {
     .home img {
         max-width: 100%;
     }
 }
 
 .photo header {
-    position: absolute;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 200ms;
-    background: white;
-}
-
-.photo header:hover {
-    opacity: 1;
+    margin-bottom: 0;
 }
 
 .photo .header-inner {

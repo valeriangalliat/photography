@@ -153,3 +153,7 @@ if (document.title.codePointAt(0) > 100) {
 
   document.title = document.title.substr(emoji.length + 1).trim()
 }
+
+if (document.body.classList.contains('photo')) {
+  document.querySelector('.photo-container').scrollIntoView({ behavior: 'smooth' })
+}
