@@ -1,3 +1,4 @@
+#!/usr/bin/sed -E -f
 #
 # Generate Markdown links. Pipe your Markdown file to this script to
 # transform links, e.g. `:%!bin/linkmd` in Vim.

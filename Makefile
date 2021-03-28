@@ -19,6 +19,10 @@ clean:
 clean-html:
 	rm -f $(HTML)
 
+.PHONY: new
+new:
+	./new
+
 orphans: .photos .references
 	@comm -23 .photos .references
 	@rm .photos .references
@@ -28,7 +32,7 @@ missing: .photos .references
 	@rm .photos .references
 
 .photos: $(PHOTOS_FULL)
-	@printf '%s\n' $(^:photos/full/%=%) | sort | uniq > $@
+	@printf '%s\n' $(^:dist/photos/full/%=%) | sort | uniq > $@
 
 .references: $(MD)
 	@grep --no-filename -o '[^/]*\.jpg' $^ | sort | uniq > $@

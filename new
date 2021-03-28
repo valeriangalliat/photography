@@ -1,33 +1,45 @@
 #!/bin/sh -e
 
-printf "Title: " >&2
+printf "Title: "
 read title
 
-printf "Path (e.g. 2019/2019-07-20-foo): " >&2
-read path
+suggested_slug=$(node -p "require('@sindresorhus/slugify')(process.argv[1], { decamelize: false })" "$title")
+printf "Slug [$suggested_slug]: "
+read slug
+slug=${slug:-$suggested_slug}
+
+suggested_date=$(date +%Y-%m-%d)
+printf "Date [$suggested_date]: "
+read date
+date=${date:-$suggested_date}
+
+year=$(echo "$date" | head -c4)
+path="$year/$date-$slug"
 
 dir=$(mktemp -d)
 
-echo "Put all the photos you want to add in this directory, then press enter..." >&2
+echo "Put all the photos you want to add in this directory, then press enter..."
 open "$dir"
 read
 
-echo "### [$title](/$path.md)"
-echo
+mkdir -p "$year"
+(echo "# $title"; echo) > "$path.md"
 
-for photo in $(find "$dir" -type f | awk -F/ '{print $NF;}' | sort); do
+sed '/^## Albums$/q' index.md > index.md.new
+(echo; echo "### [$title](/$path.md)"; echo) >> index.md.new
+
+for photo in $(find "$dir" -type f | awk -F/ '{print $NF}' | sort); do
     name=$(echo "$photo" | sed 's/\.[^\.]*$//')
-    echo "[![$name](/photos/thumb/$photo)](/$path.md)"
+    echo "[![$name](/photos/hd/$photo)](/photos/$name.md)" >> "$path.md"
+    echo "[![$name](/photos/thumb/$photo)](/$path.md)" >> index.md.new
 done
 
-echo
-echo "# $title"
-echo
+echo "Wrote $path.md"
 
-for photo in $(find "$dir" -type f | awk -F/ '{print $NF;}' | sort); do
-    name=$(echo "$photo" | sed 's/\.[^\.]*$//')
-    echo "[![$name](/photos/hd/$photo)](/photos/$name.md)"
-done
+sed -n '/^## Albums$/,$p' index.md | sed 1d >> index.md.new
+mv index.md.new index.md
 
-mv -v "$dir"/* photos/full
+echo "Updated index.md"
+
+mv -v "$dir"/* dist/photos/full
 rmdir "$dir"

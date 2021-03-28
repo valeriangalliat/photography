@@ -3,6 +3,7 @@
     "lint": "standard"
   },
   "dependencies": {
+    "@sindresorhus/slugify": "^1.1.0",
     "exiftool-vendored": "^8.0.0",
     "icomoon-free-npm": "0.0.0",
     "marked": "^0.6.0",
