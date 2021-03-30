@@ -69,5 +69,21 @@ dist/js/main.js: js/main.js
 dist/img/icons/%.svg: node_modules/icomoon-free-npm/SVG/%.svg
 	cat $< | sed 's/<svg /<svg id="icon" /;s/fill="#000000"/style="fill: var(--color-fill)"/' > $@
 
+dist/img/val-1.jpg: dist/photos/full/IMG_20181204_184340.jpg
+	@# Offset is 45% of full height (1440) minus final height (768) to
+	@# mimic browser's background position behaviour.
+	convert $< -resize 1920x768^ -extent 1920x768+0+302.4 $@
+
+dist/img/val-2.jpg: dist/photos/full/IMG_20190103_111123.jpg
+	@# Offset is 10% of full height (1440) minus final height (768) to
+	@# mimic browser's background position behaviour.
+	convert $< -resize 1920x768^ -extent 1920x768+0+67.2 $@
+
+dist/img/val-3.mp4: dist/img/VID_20181121_141159.mp4
+	ffmpeg -i $< -s 960x540 -c:a copy $@
+
+dist/img/val-3.jpg: dist/img/VID_20181121_141159.mp4
+	ffmpeg -v error -nostdin -accurate_seek -ss 00:00:01.933 -i $< -vf scale=iw*sar:ih -frames:v 1 $@
+
 serve:
 	cd dist; if python --version 2>&1 | grep -q 'Python 2'; then python -m SimpleHTTPServer 8001; else python -m http.server 8001; fi

@@ -38,7 +38,7 @@ exiftool.read(photo)
       </tr>
       <tr>
         <th>Date</th>
-        <td>${exif.DateTimeOriginal.toISOString().split('.')[0]}</td>
+        <td>${(exif.DateTimeOriginal || exif.FileModifyDate).toISOString().split('.')[0]}</td>
       </tr>
       <tr>
         <th>Make</th>

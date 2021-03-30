@@ -1,25 +1,5 @@
 # 📷 Photography
 
-Hey there! I'm [Val](https://val.codejam.info/), and you'll find on this
-website most of the pictures that I took since I got my camera in 2017.
-
-I shoot with a Panasonic LX100 because it's lightweight and compact
-while still having manual controls for most settings I care about (and
-also the fact it shoots 4K video even though that's irrelevant for what
-you'll see on this website).
-
-This allows me to take it with me pretty much everywhere without it
-being a big commitment, and I can carry it strapped around my chest
-while I hike or walk around without it bothering me, while being able to
-draw it in a matter of seconds if I need to.
-
-Even though I don't get the quality and versatility that a solid DSLR
-with a couple of lenses would deliver (particularly zoom length and
-depth of field), it's still pretty fucking good if you ask me, and the
-fact it enables me to have a proper camera in my hands in situations
-where I would likely not have bothered bringing with me a full DSLR
-setup is definitely worth the tradeoff.
-
 ## Albums
 
 ### [🍺 Beer](/beer.md)
