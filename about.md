@@ -17,7 +17,7 @@ being a big commitment, and I can carry it strapped around my chest
 while I hike or walk around without it bothering me, while being able to
 draw it in a matter of seconds if I need to.
 
-<video src="img/val-3.mp4" width="100%" poster="/img/val-3.jpg" loop controls></video>
+<video src="img/val-3.mp4" width="100%" poster="/img/val-3.jpg" loop controls muted></video>
 
 Even though I don't get the quality and versatility that a solid DSLR
 with a couple of lenses would deliver (particularly zoom length and
