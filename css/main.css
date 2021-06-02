@@ -24,7 +24,7 @@ h1 {
     margin-bottom: 2em;
 }
 
-@media not all and (max-width: 42em) {
+@media not (max-width: 42em) {
     h1 {
         font-size: 4em;
     }
@@ -52,14 +52,14 @@ h1 {
  * reach their max size.
  *
  * So effectively this is `(300 + 5) * 2 + 16 + 16`. */
-@media all and (max-width: 642px) {
+@media (max-width: 642px) {
     .home img {
         max-width: 49%;
     }
 }
 
 /* Same rule as above, `(300 + 5) * 1 + 16 + 16`. */
-@media all and (max-width: 337px) {
+@media (max-width: 337px) {
     .home img {
         max-width: 100%;
     }
