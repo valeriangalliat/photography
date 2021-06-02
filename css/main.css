@@ -24,7 +24,7 @@ h1 {
     margin-bottom: 2em;
 }
 
-@media not (max-width: 42em) {
+@media (min-width: 42em) {
     h1 {
         font-size: 4em;
     }
