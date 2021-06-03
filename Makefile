@@ -86,4 +86,4 @@ dist/img/val-3.jpg: dist/img/VID_20181121_141159.mp4
 	ffmpeg -v error -nostdin -accurate_seek -ss 00:00:01.933 -i $< -vf scale=iw*sar:ih -frames:v 1 $@
 
 serve:
-	cd dist; if python --version 2>&1 | grep -q 'Python 2'; then python -m SimpleHTTPServer 8001; else python -m http.server 8001; fi
+	cd dist && python3 -m http.server 8001
