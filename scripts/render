@@ -1,0 +1,47 @@
+#!/usr/bin/env node
+
+const fs = require('fs')
+const { promisify } = require('util')
+const marked = require('marked')
+const imageSize = promisify(require('image-size'))
+
+async function main () {
+  const path = process.argv[2]
+  const md = fs.readFileSync(path, 'utf8')
+
+  const title = md.slice(0, md.indexOf('\n')).replace(/^# /, '')
+
+  let head = fs.readFileSync('head.html', 'utf8')
+    .replace('<title>', `<title>${title}`)
+
+  if (path === 'index.md') {
+    head = head.replace('<body>', '<body class="home">')
+  }
+
+  process.stdout.write(head)
+
+  let html = marked(md).replaceAll('.md"', '.html"')
+
+  const refPattern = /src="\/([^"]*.jpg)"/g
+  const refs = html.match(refPattern).map(ref => ref.slice('src="/'.length, -1))
+  const sizeIndex = {}
+
+  await Promise.all(refs.map(async ref => {
+    sizeIndex[ref] = await imageSize(`dist/${ref}`)
+  }))
+
+  html = html.replace(refPattern, (match, ref) => {
+    const { width, height } = sizeIndex[ref]
+    return `src="/${ref}" width="${width}" height="${height}"`
+  })
+
+  if (path.startsWith('20')) {
+    html = html.replace('<p>', '<p class="date">')
+  }
+
+  process.stdout.write(html)
+  process.stdout.write('\n')
+  process.stdout.write(fs.readFileSync('foot.html', 'utf8'))
+}
+
+main()

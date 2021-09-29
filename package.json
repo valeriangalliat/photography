@@ -4,8 +4,9 @@
   },
   "dependencies": {
     "@sindresorhus/slugify": "^1.1.0",
-    "exiftool-vendored": "^8.0.0",
+    "emojicon-big": "^1.1.0",
     "icomoon-free-npm": "0.0.0",
+    "image-size": "^1.0.0",
     "marked": "^0.6.0",
     "normalize.css": "^8.0.1"
   },
