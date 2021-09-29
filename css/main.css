@@ -2,13 +2,13 @@ html {
     font: 1em/1.5 "Helvetica Neue", sans-serif;
 }
 
-header, footer {
+nav, footer {
     /* Match the blog font size to keep the header and footer consistent. */
     font-size: 1.25em;
 }
 
-header {
-    margin-bottom: 6em;
+nav {
+    margin-bottom: 5em;
 }
 
 h1 {
@@ -65,12 +65,8 @@ h1 {
     }
 }
 
-.photo header {
+.photo nav {
     margin-bottom: 0;
-}
-
-.photo .header-inner {
-    padding-bottom: 1em;
 }
 
 .photo .markdown-body {
@@ -102,6 +98,7 @@ h1 {
     display: table;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1em;
 }
 
 .photo th {
@@ -112,4 +109,8 @@ h1 {
 .photo td {
     width: 50%;
     text-align: left;
+}
+
+.photo .references {
+    list-style-type: none;
 }

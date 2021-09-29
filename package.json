@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "lint": "standard"
+    "lint": "standard js scripts/render scripts/render-photo-page scripts/index-references"
   },
   "dependencies": {
     "@sindresorhus/slugify": "^1.1.0",

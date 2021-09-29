@@ -1,4 +1,5 @@
 /* eslint-env browser */
+/* global emojicon */
 
 // More likely an emoji or a sequence of emoji.
 if (document.title.codePointAt(0) > 100) {

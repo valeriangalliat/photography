@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+
+const fs = require('fs')
+const readline = require('readline')
+
+const rl = readline.createInterface({ input: process.stdin })
+
+const index = {
+  titles: {},
+  links: {}
+}
+
+rl.on('line', line => {
+  const [ref, name] = line.split(':')
+
+  if (!(ref in index.titles)) {
+    index.titles[ref] = ''
+
+    const rl = readline.createInterface({ input: fs.createReadStream(ref) })
+
+    rl.once('line', line => {
+      index.titles[ref] = line.replace(/^# /, '')
+      rl.close()
+    })
+  }
+
+  index.links[name] = index.links[name] || []
+  index.links[name].push(ref)
+})
+
+process.on('exit', () => {
+  console.log(JSON.stringify(index, null, 2))
+})

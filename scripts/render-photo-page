@@ -2,6 +2,7 @@
 
 const fs = require('fs')
 const path = require('path')
+const index = require('../cache/references')
 
 const exif = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'))
 const name = path.basename(process.argv[2]).split('.')[0]
@@ -19,7 +20,7 @@ const date = (exif.DateTimeOriginal || exif.FileModifyDate)
   .replace(' ', 'T')
 
 const head = fs.readFileSync('head.html', 'utf8')
-  .replace('<title>', `<title>📷 ${name}`)
+  .replace('<title>', `<title>📸 ${name}`)
   .replace('<body>', '<body class="photo">')
 
 process.stdout.write(head.replace(
@@ -69,6 +70,13 @@ process.stdout.write(`    <table>
         <td>${exif.ISO}</td>
       </tr>
     </table>
+    <ul class="references">
 `)
+
+for (const link of index.links[name]) {
+  process.stdout.write(`      <li><a href="/${link.replace(/\.md$/, '.html')}">${index.titles[link]}</a></li>\n`)
+}
+
+process.stdout.write('    </ul>\n')
 
 process.stdout.write(fs.readFileSync('foot.html', 'utf8'))

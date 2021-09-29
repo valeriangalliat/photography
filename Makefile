@@ -1,15 +1,18 @@
 PHOTOS_FULL = $(shell find dist/photos/full -name '*.jpg')
 PHOTOS_HD = $(PHOTOS_FULL:dist/photos/full/%=dist/photos/hd/%)
 PHOTOS_THUMB = $(PHOTOS_FULL:dist/photos/full/%=dist/photos/thumb/%)
-PHOTOS_EXIF = $(PHOTOS_FULL:dist/photos/full/%.jpg=dist/photos/exif/%.json)
 PHOTOS_HTML = $(PHOTOS_FULL:dist/photos/full/%.jpg=dist/photos/%.html)
+
 MD = $(shell find . -name '*.md' ! -path './node_modules/*' ! -path './dist/*' ! -path './README.md' | sed 's,^./,,')
 HTML = $(MD:%.md=dist/%.html)
-EXIF_TAGS = -ImageWidth -ImageHeight -DateTimeOriginal -FileModifyDate -Make -Model -FocalLength -FocalLengthIn35mmFormat -Aperture -Shutterspeed -ISO
-ICONS = dist/img/icons/403-instagram.svg dist/img/icons/407-twitter.svg dist/img/icons/414-youtube.svg dist/img/icons/433-github.svg dist/img/icons/452-soundcloud.svg dist/img/icons/458-linkedin.svg
-ASSETS = dist/css/normalize.css dist/css/codejam.css dist/css/main.css dist/js/main.js $(ICONS)
 
-build: dist $(PHOTOS_HD) $(PHOTOS_THUMB) $(PHOTOS_EXIF) $(PHOTOS_HTML) $(HTML) $(ASSETS)
+EXIF_CACHE = $(PHOTOS_FULL:dist/photos/full/%.jpg=cache/exif/%.json)
+EXIF_TAGS = -ImageWidth -ImageHeight -DateTimeOriginal -FileModifyDate -Make -Model -FocalLength -FocalLengthIn35mmFormat -Aperture -Shutterspeed -ISO
+
+ICONS = dist/img/icons/403-instagram.svg dist/img/icons/407-twitter.svg dist/img/icons/414-youtube.svg dist/img/icons/433-github.svg dist/img/icons/452-soundcloud.svg dist/img/icons/458-linkedin.svg
+ASSETS = dist/css/normalize.css dist/css/codejam.css dist/css/main.css dist/js/emojicon.js dist/js/main.js $(ICONS)
+
+build: dist $(PHOTOS_HD) $(PHOTOS_THUMB) $(PHOTOS_HTML) $(HTML) $(EXIF_CACHE) $(ASSETS)
 
 dist:
 	git worktree add dist gh-pages
@@ -38,17 +41,24 @@ missing: .photos .references
 .references: $(MD)
 	@grep --no-filename -o '[^/]*\.jpg' $^ | sort | uniq > $@
 
+cache/references.json:
+	mkdir -p cache
+	grep -Ro '](/photos/[^)]*\.md)' 20* *.md | sed 's/:](\/photos\//:/;s/\.md)$$//' | ./scripts/index-references > $@
+
+cache/exif/%.json: dist/photos/full/%.jpg | cache/exif
+	exiftool $< -j $(EXIF_TAGS) | jq '.[0] | del(.SourceFile) | if .DateTimeOriginal then del(.FileModifyDate) else . end' > $@
+
+cache/exif:
+	mkdir -p $@
+
 dist/photos/hd/%.jpg: dist/photos/full/%.jpg
 	convert $< -resize 1920x1080^ $@
 
 dist/photos/thumb/%.jpg: dist/photos/full/%.jpg
 	convert $< -resize 300x200^ -gravity center -extent 300x200 $@
 
-dist/photos/exif/%.json: dist/photos/full/%.jpg
-	exiftool $< -j $(EXIF_TAGS) | jq '.[0] | del(.SourceFile) | if .DateTimeOriginal then del(.FileModifyDate) else . end' > $@
-
-dist/photos/%.html: dist/photos/exif/%.json head.html foot.html
-	./scripts/render-photo-page $< > $@
+dist/photos/%.html: head.html foot.html | cache/exif/%.json cache/references.json
+	./scripts/render-photo-page $| > $@
 
 dist/%.html: %.md head.html foot.html | $(PHOTOS_HD) $(PHOTOS_THUMB)
 	./scripts/render $< > $@
@@ -58,8 +68,8 @@ dist/css/normalize.css: node_modules/normalize.css/normalize.css
 
 dist/css/codejam.css:
 	curl \
-		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/base.css \
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/colors.css \
+		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/base.css \
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/footer.css \
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/header.css \
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/nav.css \

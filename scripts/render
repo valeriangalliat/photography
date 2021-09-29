@@ -40,7 +40,6 @@ async function main () {
   }
 
   process.stdout.write(html)
-  process.stdout.write('\n')
   process.stdout.write(fs.readFileSync('foot.html', 'utf8'))
 }
 
