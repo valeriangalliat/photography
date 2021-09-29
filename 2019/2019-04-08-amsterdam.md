@@ -1,24 +1,24 @@
 # 🚲 Amsterdam
 April 2019
 
-[![P2610410](/photos/hd/P2610410.jpg)](/photos/P2610410.md)
-[![P2610418](/photos/hd/P2610418.jpg)](/photos/P2610418.md)
-[![P2610420](/photos/hd/P2610420.jpg)](/photos/P2610420.md)
-[![P2610429](/photos/hd/P2610429.jpg)](/photos/P2610429.md)
-[![P2610440](/photos/hd/P2610440.jpg)](/photos/P2610440.md)
-[![P2610463](/photos/hd/P2610463.jpg)](/photos/P2610463.md)
-[![P2610470](/photos/hd/P2610470.jpg)](/photos/P2610470.md)
-[![P2610485](/photos/hd/P2610485.jpg)](/photos/P2610485.md)
-[![P2610496](/photos/hd/P2610496.jpg)](/photos/P2610496.md)
-[![P2610534](/photos/hd/P2610534.jpg)](/photos/P2610534.md)
-[![P2610541](/photos/hd/P2610541.jpg)](/photos/P2610541.md)
-[![P2610569](/photos/hd/P2610569.jpg)](/photos/P2610569.md)
-[![P2610582](/photos/hd/P2610582.jpg)](/photos/P2610582.md)
-[![P2610605](/photos/hd/P2610605.jpg)](/photos/P2610605.md)
-[![P2610676](/photos/hd/P2610676.jpg)](/photos/P2610676.md)
-[![P2610685](/photos/hd/P2610685.jpg)](/photos/P2610685.md)
-[![P2610708](/photos/hd/P2610708.jpg)](/photos/P2610708.md)
-[![P2610710](/photos/hd/P2610710.jpg)](/photos/P2610710.md)
-[![P2610755](/photos/hd/P2610755.jpg)](/photos/P2610755.md)
-[![P2610763](/photos/hd/P2610763.jpg)](/photos/P2610763.md)
-[![P2610769](/photos/hd/P2610769.jpg)](/photos/P2610769.md)
+!P2610410
+!P2610418
+!P2610420
+!P2610429
+!P2610440
+!P2610463
+!P2610470
+!P2610485
+!P2610496
+!P2610534
+!P2610541
+!P2610569
+!P2610582
+!P2610605
+!P2610676
+!P2610685
+!P2610708
+!P2610710
+!P2610755
+!P2610763
+!P2610769

@@ -30,8 +30,8 @@ sed '/^## Albums$/q' index.md > index.md.new
 
 for photo in $(find "$dir" -type f | awk -F/ '{print $NF}' | sort); do
     name=$(echo "$photo" | sed 's/\.[^\.]*$//')
-    echo "[![$name](/photos/hd/$photo)](/photos/$name.md)" >> "$path.md"
-    echo "[![$name](/photos/thumb/$photo)](/$path.md)" >> index.md.new
+    echo "!$name" >> "$path.md"
+    echo "!:$name /$path.md" >> index.md.new
 done
 
 echo "Wrote $path.md"

@@ -1,22 +1,22 @@
 # ⛰ Indian Head (Adirondacks)
 August 2019
 
-[![P2640992](/photos/hd/P2640992.jpg)](/photos/P2640992.md)
-[![P2650052](/photos/hd/P2650052.jpg)](/photos/P2650052.md)
-[![P2650056](/photos/hd/P2650056.jpg)](/photos/P2650056.md)
-[![P2650060](/photos/hd/P2650060.jpg)](/photos/P2650060.md)
-[![P2650074](/photos/hd/P2650074.jpg)](/photos/P2650074.md)
-[![P2650086](/photos/hd/P2650086.jpg)](/photos/P2650086.md)
-[![P2650090](/photos/hd/P2650090.jpg)](/photos/P2650090.md)
-[![P2650091](/photos/hd/P2650091.jpg)](/photos/P2650091.md)
-[![P2650092](/photos/hd/P2650092.jpg)](/photos/P2650092.md)
-[![P2650095](/photos/hd/P2650095.jpg)](/photos/P2650095.md)
-[![P2650099](/photos/hd/P2650099.jpg)](/photos/P2650099.md)
-[![P2650100](/photos/hd/P2650100.jpg)](/photos/P2650100.md)
-[![P2650106](/photos/hd/P2650106.jpg)](/photos/P2650106.md)
-[![P2650107](/photos/hd/P2650107.jpg)](/photos/P2650107.md)
-[![P2650124](/photos/hd/P2650124.jpg)](/photos/P2650124.md)
-[![P2650157](/photos/hd/P2650157.jpg)](/photos/P2650157.md)
-[![P2650183](/photos/hd/P2650183.jpg)](/photos/P2650183.md)
-[![P2650204](/photos/hd/P2650204.jpg)](/photos/P2650204.md)
-[![P2650220](/photos/hd/P2650220.jpg)](/photos/P2650220.md)
+!P2640992
+!P2650052
+!P2650056
+!P2650060
+!P2650074
+!P2650086
+!P2650090
+!P2650091
+!P2650092
+!P2650095
+!P2650099
+!P2650100
+!P2650106
+!P2650107
+!P2650124
+!P2650157
+!P2650183
+!P2650204
+!P2650220

@@ -7,7 +7,32 @@ const imageSize = promisify(require('image-size'))
 
 async function main () {
   const path = process.argv[2]
+
   const md = fs.readFileSync(path, 'utf8')
+    .split('\n')
+    .map(line => {
+      if (!line.startsWith('!')) {
+        return line
+      }
+
+      if (line.startsWith('![')) {
+        return line
+      }
+
+      const [prefix, caption] = line.split('"')
+      let [name, path] = prefix.replace(/^!:?/, '').split(' ')
+      const thumb = line.startsWith('!:')
+      const image = `/photos/${thumb ? 'thumb' : 'hd'}/${name}.jpg`
+
+      path = path || `/photos/${name}.html`
+
+      if (caption) {
+        return `[![${name}](${image}) *${caption}*](${path})`
+      }
+
+      return `[![${name}](${image})](${path})`
+    })
+    .join('\n')
 
   const title = md.slice(0, md.indexOf('\n')).replace(/^# /, '')
 
