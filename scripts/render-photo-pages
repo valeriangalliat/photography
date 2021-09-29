@@ -1,0 +1,165 @@
+#!/usr/bin/env node
+
+const fs = require('fs')
+const path = require('path')
+const readline = require('readline')
+const cp = require('child_process')
+const { exiftool } = require('exiftool-vendored')
+
+const exiftoolArgs = ['-fast2', '-ImageWidth', '-ImageHeight', '-DateTimeOriginal', '-FileModifyDate', '-Make', '-Model', '-FocalLength', '-FocalLengthIn35mmFormat', '-Aperture', '-Shutterspeed', '-ISO']
+
+const head = fs.readFileSync('head.html', 'utf8')
+const foot = fs.readFileSync('foot.html', 'utf8')
+
+async function buildIndex () {
+  const sources = (await fs.promises.readdir('.'))
+    .filter(name => name.startsWith('20') || name.endsWith('.md'))
+    .filter(name => name !== 'README.md')
+
+  const grep = cp.spawn('grep', ['-Ro', '](/photos/[^)]*\\.md)', ...sources])
+  const rl = readline.createInterface({ input: grep.stdout })
+  const index = { titles: {}, links: {} }
+
+  rl.on('line', line => {
+    const [ref, match] = line.split(':')
+    const name = match.replace(/^]\(\/photos\//, '').replace(/\.md\)$/, '')
+
+    if (!(ref in index.titles)) {
+      index.titles[ref] = ''
+
+      const rl = readline.createInterface({ input: fs.createReadStream(ref) })
+
+      rl.once('line', line => {
+        index.titles[ref] = line.replace(/^# /, '')
+        rl.close()
+      })
+    }
+
+    index.links[name] = index.links[name] || []
+    index.links[name].push(ref)
+  })
+
+  return new Promise(resolve => rl.on('close', () => resolve(index)))
+}
+
+async function getCachedExif (name) {
+  try {
+    return JSON.parse(await fs.promises.readFile(`cache/exif/${name}.json`, 'utf8'))
+  } catch (err) {
+    if (err.code !== 'ENOENT') {
+      throw err
+    }
+  }
+
+  const exif = await exiftool.readRaw(`dist/photos/full/${name}.jpg`, exiftoolArgs)
+
+  await fs.promises.writeFile(`cache/exif/${name}.json`, JSON.stringify(exif))
+
+  return exif
+}
+
+async function render (index, name) {
+  console.log(name)
+
+  const exif = await getCachedExif(name)
+  let style = ''
+  let page = ''
+
+  if (exif.ImageWidth / exif.ImageHeight > 16 / 9) {
+    // Allow image to overflow for panoramas.
+    style = ' style="max-width: none"'
+  }
+
+  const date = (exif.DateTimeOriginal || exif.FileModifyDate)
+    .split('-')[0]
+    .replace(':', '-')
+    .replace(':', '-')
+    .replace(' ', 'T')
+
+  page += head
+    .replace('<title>', `<title>📸 ${name}`)
+    .replace('<body>', '<body class="photo">')
+    .replace(
+      '<div class="markdown-body">',
+      `<div class="photo-container">
+    <a href="/photos/full/${name}.jpg">
+      <img src="/photos/hd/${name}.jpg"${style}>
+    </a>
+  </div>
+  <div class="markdown-body">`)
+
+  page += `    <table>
+      <tr>
+        <th>Name</th>
+        <td>${name}</td>
+      </tr>
+      <tr>
+        <th>Date</th>
+        <td>${date}</td>
+      </tr>
+      <tr>
+        <th>Make</th>
+        <td>${exif.Make}</td>
+      </tr>
+      <tr>
+        <th>Model</th>
+        <td>${exif.Model}</td>
+      </tr>
+      <tr>
+        <th>Focal length</th>
+        <td>${exif.FocalLength}</td>
+      </tr>
+      <tr>
+        <th>Focal length (35 mm equivalent)</th>
+        <td>${exif.FocalLengthIn35mmFormat}</td>
+      </tr>
+      <tr>
+        <th>Aperture</th>
+        <td>${exif.Aperture}</td>
+      </tr>
+      <tr>
+        <th>Shutter speed</th>
+        <td>${exif.ShutterSpeed}</td>
+      </tr>
+      <tr>
+        <th>ISO</th>
+        <td>${exif.ISO}</td>
+      </tr>
+    </table>
+    <ul class="references">
+`
+
+  for (const link of index.links[name]) {
+    page += `      <li><a href="/${link.replace(/\.md$/, '.html')}">${index.titles[link]}</a></li>\n`
+  }
+
+  page += '    </ul>\n'
+  page += foot
+
+  await fs.promises.writeFile(`dist/photos/${name}.html`, page)
+}
+
+async function main () {
+  const index = await buildIndex()
+
+  await fs.promises.mkdir('cache/exif', { recursive: true })
+
+  const batches = [[]]
+
+  for (const photo of Object.keys(index.links)) {
+    const batch = batches[0]
+    batch.push(photo)
+
+    if (batch.length >= 8) {
+      batches.unshift([])
+    }
+  }
+
+  for (const batch of batches) {
+    await Promise.all(batch.map(name => render(index, name)))
+  }
+
+  exiftool.end()
+}
+
+main()
