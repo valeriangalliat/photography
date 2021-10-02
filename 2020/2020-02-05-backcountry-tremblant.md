@@ -9,28 +9,24 @@ Went backcountry skiing in Tremblant, great experience!
 Always like to have a little beer on top, Belle Gueule actually sent me
 those to take pictures of, pretty sure they'll like the style. 😋
 
-Yéti caché.
 
-!P2660773
+<div class="slide">
 
-Yéti dégagé.
+* !P2660773 "Yéti caché."
+* !P2660775 "Yéti dégagé."
+* !P2660779 "Yéti 2:3."
+* !P2660783 "Yéti Atomic."
+* !P2660786 "Yéti Atomic wider."
 
-!P2660775
+</div>
 
-Yéti 2:3.
+<div class="slide">
 
-!P2660779
+* !P2660792 "Val Atomic (yeah, that's me)."
+* !P2660793 "With a smile! 😬"
+* !P2660798 "Portrait."
 
-Yéti Atomic.
-
-!P2660783
-!P2660786
-
-Val Atomic (yeah, that's me).
-
-!P2660792
-!P2660793
-!P2660798
+</div>
 
 The summit (no view though, so sad).
 

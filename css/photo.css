@@ -1,0 +1,57 @@
+html.photo nav {
+    margin-bottom: 0;
+}
+
+html.photo .markdown-body {
+    text-align: center;
+}
+
+html.photo table {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+}
+
+html.photo th {
+    width: 50%;
+    text-align: right;
+}
+
+html.photo td {
+    width: 50%;
+    text-align: left;
+}
+
+html.photo .references {
+    list-style-type: none;
+}
+
+html.photo {
+    scroll-snap-type: y proximity;
+}
+
+html.photo nav, html.photo .photo-container, html.photo footer {
+    scroll-snap-align: start;
+}
+
+.photo-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 2rem;
+    background-color: #0e0e0e;
+    height: 100vh;
+}
+
+.photo-container a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.photo-container img {
+    display: block;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+}

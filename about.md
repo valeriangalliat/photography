@@ -3,14 +3,14 @@
 Hey there! I'm [Val](https://val.codejam.info/), and you'll find on this
 website most of the pictures that I took since I got my camera in 2017.
 
-[![Val taking a photo in a kitchen](/img/val-1.jpg)](/photos/IMG_20181204_184340.md)
+[![Val taking a photo in a kitchen](/img/val-1.jpg)](/photos/IMG_20181204_184340.html)
 
 I shoot with a Panasonic LX100 because it's lightweight and compact
 while still having manual controls for most settings that I care about.
 It also shoots 4K video which, while irrelevant for this website, is
 very useful for my [YouTube channel](https://www.youtube.com/FunkyVal).
 
-[![Val taking a photo in the office](/img/val-2.jpg)](/photos/IMG_20190103_111123.md)
+[![Val taking a photo in the office](/img/val-2.jpg)](/photos/IMG_20190103_111123.html)
 
 This allows me to take it with me pretty much everywhere I go without it
 being a big commitment, and I can carry it strapped around my chest

@@ -1,15 +1,21 @@
 {
   "scripts": {
-    "lint": "standard js scripts/render scripts/render-photo-page scripts/index-references"
+    "lint": "standard --env browser js && standard scripts/render scripts/render-photo-pages",
+    "build": "esbuild js/main.js --bundle --minify --outfile=dist/js/main.js",
+    "watch": "chokidar css js '**/*.md' -c make"
   },
   "dependencies": {
     "@sindresorhus/slugify": "^1.1.0",
+    "chokidar-cli": "^3.0.0",
     "emojicon-big": "^1.1.0",
+    "esbuild": "^0.13.3",
     "exiftool-vendored": "^15.4.0",
     "icomoon-free-npm": "0.0.0",
     "image-size": "^1.0.0",
     "marked": "^0.6.0",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "scroll-snap-api": "^1.0.2",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
     "standard": "^16.0.1"
