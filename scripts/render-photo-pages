@@ -68,6 +68,40 @@ async function getCachedExif (name) {
   return exif
 }
 
+function renderTable (name, exif) {
+  const rows = []
+
+  const date = (exif.DateTimeOriginal || exif.FileModifyDate)
+    .split('-')[0]
+    .replace(':', '-')
+    .replace(':', '-')
+    .replace(' ', 'T')
+
+  const fields = [
+    ['Name', name],
+    ['Original resolution', `${exif.ImageWidth}x${exif.ImageHeight} (<a href="/buy.html">buy full size</a>)`],
+    ['Date', date],
+    ['Make', exif.Make],
+    ['Model', exif.Model],
+    ['Focal length', exif.FocalLength],
+    ['Focal length (35 mm equivalent)', exif.FocalLengthIn35mmFormat],
+    ['Aperture', exif.Aperture],
+    ['Shutter speed', exif.ShutterSpeed],
+    ['ISO', exif.ISO]
+  ]
+
+  for (const [name, value] of fields) {
+    if (value) {
+      rows.push(`      <tr>
+        <th>${name}</th>
+        <td>${value}</td>
+      </tr>`)
+    }
+  }
+
+  return `    <table>\n${rows.join('\n')}\n    </table>`
+}
+
 async function render (index, name) {
   console.log(name)
 
@@ -80,62 +114,19 @@ async function render (index, name) {
     style = ' style="max-width: none"'
   }
 
-  const date = (exif.DateTimeOriginal || exif.FileModifyDate)
-    .split('-')[0]
-    .replace(':', '-')
-    .replace(':', '-')
-    .replace(' ', 'T')
-
   page += head
     .replace('<html ', '<html class="photo" ')
     .replace('<title>', `<title>📸 ${name}`)
     .replace(
       '<div class="markdown-body">',
       `<div class="photo-container">
-    <a href="/photos/full/${name}.jpg">
+    <a href="/photos/hd/${name}.jpg">
       <img src="/photos/hd/${name}.jpg"${style}>
     </a>
   </div>
   <div class="markdown-body">`)
 
-  page += `    <table>
-      <tr>
-        <th>Name</th>
-        <td>${name}</td>
-      </tr>
-      <tr>
-        <th>Date</th>
-        <td>${date}</td>
-      </tr>
-      <tr>
-        <th>Make</th>
-        <td>${exif.Make}</td>
-      </tr>
-      <tr>
-        <th>Model</th>
-        <td>${exif.Model}</td>
-      </tr>
-      <tr>
-        <th>Focal length</th>
-        <td>${exif.FocalLength}</td>
-      </tr>
-      <tr>
-        <th>Focal length (35 mm equivalent)</th>
-        <td>${exif.FocalLengthIn35mmFormat}</td>
-      </tr>
-      <tr>
-        <th>Aperture</th>
-        <td>${exif.Aperture}</td>
-      </tr>
-      <tr>
-        <th>Shutter speed</th>
-        <td>${exif.ShutterSpeed}</td>
-      </tr>
-      <tr>
-        <th>ISO</th>
-        <td>${exif.ISO}</td>
-      </tr>
-    </table>
+  page += `${renderTable(name, exif)}
     <ul class="references">
 `
 
