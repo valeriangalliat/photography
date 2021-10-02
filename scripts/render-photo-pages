@@ -27,12 +27,12 @@ async function buildIndex () {
     .filter(name => name.startsWith('20') || name.endsWith('.md'))
     .filter(name => name !== 'README.md')
 
-  const grep = cp.spawn('grep', ['-REo', '![^\\[ :]+?( |$)', ...sources])
+  const grep = cp.spawn('grep', ['-REo', '(^| )![^\\[ :]+?( |$)', ...sources])
   const rl = readline.createInterface({ input: grep.stdout })
 
   rl.on('line', line => {
     const [ref, match] = line.split(':')
-    const name = match.slice(1).trim()
+    const name = match.trim().slice(1)
 
     if (!(ref in index.titles)) {
       index.titles[ref] = ''

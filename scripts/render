@@ -11,7 +11,7 @@ async function main () {
   const md = fs.readFileSync(path, 'utf8')
     .split('\n')
     .map(line => {
-      if (!line.match(/![^[ ]/)) {
+      if (!line.match(/(^| )![^[ ]/)) {
         return line
       }
 
@@ -45,7 +45,7 @@ async function main () {
   let html = marked(md).replaceAll('.md"', '.html"')
 
   const refPattern = /src="\/([^"]*.jpg)"/g
-  const refs = html.match(refPattern).map(ref => ref.slice('src="/'.length, -1))
+  const refs = (html.match(refPattern) || []).map(ref => ref.slice('src="/'.length, -1))
   const sizeIndex = {}
 
   await Promise.all(refs.map(async ref => {
