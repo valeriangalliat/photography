@@ -67,8 +67,8 @@ class DynamicHeight {
   updateMargin (height) {
     const margin = (-1 * (this.container.offsetHeight - height) / 2) + 'px'
 
-    this.container.style.marginTop = margin
-    this.container.style.marginBottom = margin
+    this.ul.style.marginTop = margin
+    this.ul.style.marginBottom = margin
   }
 
   onResize () {
