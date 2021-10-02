@@ -12,17 +12,27 @@ const head = fs.readFileSync('head.html', 'utf8')
 const foot = fs.readFileSync('foot.html', 'utf8')
 
 async function buildIndex () {
-  const sources = (await fs.promises.readdir('.'))
+  const index = { titles: {}, links: {} }
+
+  const [photos, files] = await Promise.all([
+    fs.promises.readdir('dist/photos/full'),
+    fs.promises.readdir('.')
+  ])
+
+  for (const photo of photos) {
+    index.links[path.parse(photo).name] = []
+  }
+
+  const sources = files
     .filter(name => name.startsWith('20') || name.endsWith('.md'))
     .filter(name => name !== 'README.md')
 
-  const grep = cp.spawn('grep', ['-Ro', '](/photos/[^)]*\\.md)', ...sources])
+  const grep = cp.spawn('grep', ['-REo', '![^\\[ :]+?( |$)', ...sources])
   const rl = readline.createInterface({ input: grep.stdout })
-  const index = { titles: {}, links: {} }
 
   rl.on('line', line => {
     const [ref, match] = line.split(':')
-    const name = match.replace(/^]\(\/photos\//, '').replace(/\.md\)$/, '')
+    const name = match.slice(1).trim()
 
     if (!(ref in index.titles)) {
       index.titles[ref] = ''
@@ -77,8 +87,8 @@ async function render (index, name) {
     .replace(' ', 'T')
 
   page += head
+    .replace('<html ', '<html class="photo" ')
     .replace('<title>', `<title>📸 ${name}`)
-    .replace('<body>', '<body class="photo">')
     .replace(
       '<div class="markdown-body">',
       `<div class="photo-container">

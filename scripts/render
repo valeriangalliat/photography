@@ -11,26 +11,23 @@ async function main () {
   const md = fs.readFileSync(path, 'utf8')
     .split('\n')
     .map(line => {
-      if (!line.startsWith('!')) {
+      if (!line.match(/![^[ ]/)) {
         return line
       }
 
-      if (line.startsWith('![')) {
-        return line
-      }
-
-      const [prefix, caption] = line.split('"')
-      let [name, path] = prefix.replace(/^!:?/, '').split(' ')
-      const thumb = line.startsWith('!:')
+      const [prefix, ...rest] = line.split('!')
+      const [pattern, caption] = rest.join('!').split('"')
+      let [name, path] = pattern.replace(/^:?/, '').split(' ')
+      const thumb = pattern.startsWith(':')
       const image = `/photos/${thumb ? 'thumb' : 'hd'}/${name}.jpg`
 
       path = path || `/photos/${name}.html`
 
       if (caption) {
-        return `[![${name}](${image}) *${caption}*](${path})`
+        return `${prefix}[![${name}](${image}) *${caption}*](${path})`
       }
 
-      return `[![${name}](${image})](${path})`
+      return `${prefix}[![${name}](${image})](${path})`
     })
     .join('\n')
 
