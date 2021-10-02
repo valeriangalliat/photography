@@ -192,12 +192,8 @@ Ciel. The taste of this beer reminds me for some reason of the
 feeling/smell of picking raspberries in the mountain when I was a kid,
 and I'm sad it was a seasonal beer and they never brewed more of it.
 
-<div class="slide">
-
-* !P2580168
-* !P2580211
-
-</div>
+!P2580168
+!P2580211
 
 ## July 1, 2018, Poisson Blanc
 

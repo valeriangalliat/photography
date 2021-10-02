@@ -39,8 +39,13 @@ The summit (no view though, so sad).
 
 <div class="slide">
 
-* !P2660825 "Lil' birdy."
 * !P2660827 "Lil' birdy on the sign."
+* !P2660825 "Lil' birdy on a tree."
+
+</div>
+
+<div class="slide">
+
 * !P2660832-2 "Lil' birdy in my hand."
 * !P2660833-2 "Lil' birdy flyn' away."
 
