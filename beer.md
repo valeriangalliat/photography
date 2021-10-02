@@ -2,43 +2,48 @@
 
 ## February 5, 2020, Tremblant
 
-Yéti caché.
+<div class="slide">
 
-!P2660773
+* !P2660773 "Yéti caché."
+* !P2660775 "Yéti dégagé."
+* !P2660779 "Yéti 2:3."
+* !P2660783 "Yéti Atomic."
+* !P2660786 "Yéti Atomic wider."
 
-Yéti dégagé.
-
-!P2660775
-
-Yéti 2:3.
-
-!P2660779
-
-Yéti Atomic.
-
-!P2660783
-!P2660786
+</div>
 
 Moar beer is always nice. Blonde d'été en plein hiver.
 
-!P2660839
-!P2660847
+<div class="slide">
+
+* !P2660839
+* !P2660847
+
+</div>
 
 ## October 15, 2019, Busbud
 
 Ping Pong IPA by Pixel microbrewery, from the Busbud office during my
 last week.
 
-!P2650973
-!P2650979
-!P2660025
+<div class="slide">
+
+* !P2650973
+* !P2650979
+* !P2660025
+
+</div>
 
 ## October 13, 2019, Ouareau Forest
 
 Akua by Le Bilboquet, an hibiscus IPA.
 
-!P2650911
-!P2650921
+<div class="slide">
+
+* !P2650911
+* !P2650921
+
+</div>
 
 ## August 31, 2019, Indian Head, Adirondacks
 
@@ -87,9 +92,13 @@ Tasty as fuck, loved it.
 Always drinking local, this Cuivrée au thé by La Barberie on top of Mont
 Albert in the middle of Gaspesie National Park.
 
-!P2630655
-!P2630667
-!P2630672
+<div class="slide">
+
+* !P2630655
+* !P2630667
+* !P2630672
+
+</div>
 
 ## December 23, 2018, Mont Saint-Hilaire
 
@@ -183,8 +192,12 @@ Ciel. The taste of this beer reminds me for some reason of the
 feeling/smell of picking raspberries in the mountain when I was a kid,
 and I'm sad it was a seasonal beer and they never brewed more of it.
 
-!P2580168
-!P2580211
+<div class="slide">
+
+* !P2580168
+* !P2580211
+
+</div>
 
 ## July 1, 2018, Poisson Blanc
 
