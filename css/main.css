@@ -38,7 +38,8 @@ h1 {
     max-width: 60rem;
 }
 
-.markdown-body img {
+img {
+    width: auto;
     height: auto;
 }
 
@@ -51,7 +52,8 @@ h1 {
  * 16px of extra padding so that the images don't readjust right when they
  * reach their max size.
  *
- * So effectively this is `(300 + 5) * 2 + 16 + 16`. */
+ * So effectively this is `(300 + 5) * 2 + 16 + 16`.
+ */
 @media (max-width: 642px) {
     .home img {
         max-width: 49%;
@@ -64,13 +66,114 @@ h1 {
         max-width: 100%;
     }
 }
+.slide {
+    margin: var(--vertical-margin, 2rem) 0;
+}
 
-.photo nav {
+.slide ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    overflow: scroll hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+/* Hack for Chrome to not eat the margin of the last element.
+ *
+ * See <https://stackoverflow.com/questions/10967979/bottom-margin-of-last-child-gets-hidden-when-overflow-applies>.
+ */
+.slide ul::after {
+    content: "";
+    padding: 1px 1px 0 0;
+    /* Consume gap and element width. */
+    margin-left: calc(-.5rem - 1px);
+}
+
+.slide li {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+
+    /* On mobile shrink the slides so that we see there's more content. */
+    max-width: calc(min(100%, 60rem) - 2em);
+}
+
+.slide li:first-child {
+    scroll-snap-align: start;
+}
+
+.slide li:last-child {
+    scroll-snap-align: end;
+}
+
+@media (min-width: 69em) {
+    /* When screen is wide enough, match slide width with page width. */
+    .slide li {
+        max-width: calc(min(100%, 60rem));
+    }
+}
+
+.slide img {
+    /* Make sure caption always goes after image. */
+    display: block;
+
+    /* For sanity when no JS, match height of all images.
+     *
+     *     9/16*60rem = 33.75rem (desktop page max width)
+     *     9/16*100vw = 56.25vw (mobile page width)
+     *     9/16*1rem = .5625rem (mobile total horizontal padding)
+     */
+    max-height: min(33.75rem, calc(56.25vw - .5625rem));
+}
+
+/* Hide scrollbar when JS version is loaded on Firefox. */
+.slide ul.loaded {
+    scrollbar-width: none;
+}
+
+/* Hide scrollbar when JS version is loaded on Chrome. */
+.slide ul.loaded::-webkit-scrollbar {
+    display: none;
+}
+html.photo nav {
     margin-bottom: 0;
 }
 
-.photo .markdown-body {
+html.photo .markdown-body {
     text-align: center;
+}
+
+html.photo table {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+}
+
+html.photo th {
+    width: 50%;
+    text-align: right;
+}
+
+html.photo td {
+    width: 50%;
+    text-align: left;
+}
+
+html.photo .references {
+    list-style-type: none;
+}
+
+html.photo {
+    scroll-snap-type: y proximity;
+}
+
+html.photo nav, html.photo .photo-container, html.photo footer {
+    scroll-snap-align: start;
 }
 
 .photo-container {
@@ -92,25 +195,4 @@ h1 {
     margin: auto;
     max-height: 100%;
     max-width: 100%;
-}
-
-.photo table {
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1em;
-}
-
-.photo th {
-    width: 50%;
-    text-align: right;
-}
-
-.photo td {
-    width: 50%;
-    text-align: left;
-}
-
-.photo .references {
-    list-style-type: none;
 }
