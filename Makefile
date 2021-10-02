@@ -97,5 +97,19 @@ dist/img/val-3.mp4: dist/img/VID_20181121_141159.mp4
 dist/img/val-3.jpg: dist/img/VID_20181121_141159.mp4
 	ffmpeg -v error -nostdin -accurate_seek -ss 00:00:01.933 -i $< -vf scale=iw*sar:ih -frames:v 1 $@
 
+dist/img/val-4.jpg: dist/photos/full/242989947_902803300666398_4415379739264788769_n.jpg
+	@# Offset is 40% of full height (1536) minus final height (768) to
+	@# mimic browser's background position behaviour.
+	convert $< -resize 1920x768^ -extent 1920x768+0+307.2 $@
+
+dist/img/icons/instagram.png:
+	curl 'https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png' | convert - -resize 16x $@
+
+dist/img/icons/twitter.png:
+	curl 'https://abs.twimg.com/responsive-web/client-web/icon-ios.b1fc7275.png' | convert - -resize 16x $@
+
+dist/img/icons/gmail.png:
+	curl 'https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico' | convert 'ico:-[3]' -resize 16x $@
+
 serve:
 	cd dist && python3 -m http.server 8001

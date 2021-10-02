@@ -1,5 +1,14 @@
 # 📸 Photography
 
+Hey there! 👋
+
+You found the site where I post some of the photos I take out there. I
+hope you like it. 🧡  
+If you want to know more about me, [read this](/about.md).
+
+**NEW!** You can now [buy the pictures](/shop.md) from this website
+including the original RAW files and Lightroom edits. Enjoy! ✨
+
 ## Albums
 
 ### [🍺 Beer](/beer.md)
