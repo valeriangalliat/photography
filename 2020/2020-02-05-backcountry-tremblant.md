@@ -30,26 +30,27 @@ those to take pictures of, pretty sure they'll like the style. 😋
 
 The summit (no view though, so sad).
 
-!P2660805
-!P2660814
+<div class="slide">
 
-Lil' birdy.
+* !P2660805
+* !P2660814
 
-!P2660825
+</div>
 
-Lil' birdy on the sign.
+<div class="slide">
 
-!P2660827
+* !P2660825 "Lil' birdy."
+* !P2660827 "Lil' birdy on the sign."
+* !P2660832-2 "Lil' birdy in my hand."
+* !P2660833-2 "Lil' birdy flyn' away."
 
-Lil' birdy in my hand.
-
-!P2660832-2
-
-Lil' birdy flyn' away.
-
-!P2660833-2
+</div>
 
 Moar beer is always nice. Blonde d'été en plein hiver.
 
-!P2660839
-!P2660847
+<div class="slide">
+
+* !P2660839
+* !P2660847
+
+</div>
