@@ -18,6 +18,78 @@ including the original RAW files and Lightroom edits. Enjoy! ✨
 !:P2540952 /beer.md
 !:P2580426 /beer.md
 
+## September 2021
+
+### [🏕 Poisson Blanc](/2021/2021-09-25-poisson-blanc.md)
+
+!:P2760071 /2021/2021-09-25-poisson-blanc.md
+!:P2760099 /2021/2021-09-25-poisson-blanc.md
+!:P2760109 /2021/2021-09-25-poisson-blanc.md
+!:P2760160 /2021/2021-09-25-poisson-blanc.md
+
+### [🌲 Montagne Noire](/2021/2021-09-19-montagne-noire.md)
+
+!:P2750815 /2021/2021-09-19-montagne-noire.md
+!:P2750822 /2021/2021-09-19-montagne-noire.md
+!:P2750831-Pano /2021/2021-09-19-montagne-noire.md
+!:P2750838 /2021/2021-09-19-montagne-noire.md
+
+### [⛰ Acropole des Draveurs](/2021/2021-09-11-acropole-des-draveurs.md)
+
+!:P2750675 /2021/2021-09-11-acropole-des-draveurs.md
+!:P2750683 /2021/2021-09-11-acropole-des-draveurs.md
+!:P2750684 /2021/2021-09-11-acropole-des-draveurs.md
+!:P2750693-Pano /2021/2021-09-11-acropole-des-draveurs.md
+
+### [🌊 Parc du Bic](/2021/2021-09-09-parc-du-bic.md)
+
+!:P2750602 /2021/2021-09-09-parc-du-bic.md
+!:P2750624-Pano /2021/2021-09-09-parc-du-bic.md
+!:P2750631 /2021/2021-09-09-parc-du-bic.md
+!:P2750645 /2021/2021-09-09-parc-du-bic.md
+
+### [🏕 Kamouraska](/2021/2021-09-08-kamouraska.md)
+
+!:IMG_20210908_123759 /2021/2021-09-08-kamouraska.md
+!:IMG_20210908_072751-Pano /2021/2021-09-08-kamouraska.md
+!:P2750661 /2021/2021-09-08-kamouraska.md
+!:P2750671 /2021/2021-09-08-kamouraska.md
+
+## July 2021
+
+### [🥮 Magdelen Islands](/2021/2021-07-11-magdelen-islands.md)
+
+!:P2740800 /2021/2021-07-11-magdelen-islands.md
+!:P2740884 /2021/2021-07-11-magdelen-islands.md
+!:P2750066 /2021/2021-07-11-magdelen-islands.md
+!:P2750394 /2021/2021-07-11-magdelen-islands.md
+
+## June 2021
+
+### [🐠 Poisson Blanc](/2021/2021-06-28-poisson-blanc.md)
+
+!:P2740410 /2021/2021-06-28-poisson-blanc.md
+!:P2740416 /2021/2021-06-28-poisson-blanc.md
+!:P2740500 /2021/2021-06-28-poisson-blanc.md
+!:P2740504 /2021/2021-06-28-poisson-blanc.md
+
+## January 2021
+
+### [🏝 Dominican Republic](/2021/2021-01-04-dominican-republic.md)
+
+!:P2720766 /2021/2021-01-04-dominican-republic.md
+!:P2720768 /2021/2021-01-04-dominican-republic.md
+!:P2730153 /2021/2021-01-04-dominican-republic.md
+
+## June 2020
+
+### [🧗 Climbing in Larouche](/2020/2020-06-14-climbing-larouche.md)
+
+!:P2680829 /2020/2020-06-14-climbing-larouche.md
+!:P2680896 /2020/2020-06-14-climbing-larouche.md
+!:P2680898 /2020/2020-06-14-climbing-larouche.md
+!:P2690032 /2020/2020-06-14-climbing-larouche.md
+
 ## May 2020
 
 ### [⛰ Ouareau Summit](/2020/2020-05-20-ouareau-summit.md)

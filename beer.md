@@ -1,5 +1,21 @@
 # 🍺 Beer
 
+## June 28, 2021, Poisson Blanc
+
+<div class="slide">
+
+* !P2740407
+* !P2740408
+* !P2740410
+
+</div>
+
+## June 14, 2020, Larouche
+
+Nothing crazy but it's a beer pic, so it hoes here. 😛
+
+!P2690091
+
 ## February 5, 2020, Tremblant
 
 <div class="slide">
