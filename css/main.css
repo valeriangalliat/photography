@@ -16,6 +16,10 @@ h1 {
     margin: 1em 0;
 }
 
+h1 small {
+    font-size: .8rem;
+}
+
 .date {
     color: #bbb;
     font-weight: lighter;
@@ -27,6 +31,10 @@ h1 {
 @media (min-width: 42em) {
     h1 {
         font-size: 4em;
+    }
+
+    h1 small {
+        font-size: 1rem;
     }
 
     .date {
@@ -66,8 +74,46 @@ img {
         max-width: 100%;
     }
 }
+
+.video {
+    position: relative;
+
+    /* Force 16:9 ratio. */
+    padding-bottom: 56.25%;
+}
+
+.video iframe, .video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 .slide {
-    margin: var(--vertical-margin, 2rem) 0;
+    margin: 2rem 0;
+}
+
+/* Hack to make up for the fact that I can't easily in Markdown
+ * include a HTML slide inside a paragraph without it closing and
+ * opening new paragraphs around.
+ *
+ * This will eat the margins around in order to look like it's inline.
+ */
+.slide.inline {
+    margin: -2rem 0;
+}
+
+.slide.inline + .slide.inline {
+    margin-top: 2rem;
+}
+
+.slide.inline-top {
+    margin-top: -2rem;
+}
+
+.slide.inline-bottom {
+    margin-bottom: -2rem;
 }
 
 .slide ul {
@@ -118,9 +164,6 @@ img {
 }
 
 .slide img {
-    /* Make sure caption always goes after image. */
-    display: block;
-
     /* For sanity when no JS, match height of all images.
      *
      *     9/16*60rem = 33.75rem (desktop page max width)
