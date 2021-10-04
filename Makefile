@@ -26,6 +26,9 @@ clean:
 clean-html:
 	rm -f $(HTML)
 
+clean-orphans:
+	make orphans | xargs ./scripts/delete-photo
+
 new:
 	./scripts/new
 
@@ -40,8 +43,8 @@ missing: .photos .references
 .photos: $(PHOTOS_FULL)
 	@printf '%s\n' $(^:dist/photos/full/%=%) | sort | uniq > $@
 
-.references: $(PHOTOS_HTML)
-	@grep --no-filename -o '[^/]*\.jpg' $^ | sort | uniq > $@
+.references: $(HTML)
+	@grep --no-filename -o '[^/]*\.jpg' $^ | sed 's/\.html$$/.jpg/' | sort | uniq > $@
 
 dist/photos/hd/%.jpg: dist/photos/full/%.jpg
 	convert $< -resize 1920x1080^ $@
@@ -53,7 +56,7 @@ dist/photos/%.html: cache/render-photo-pages-flag
 	@# Avoid slowing down `make` by looking up for implicit targets.
 	@echo $@
 
-cache/render-photo-pages-flag: head.html foot.html
+cache/render-photo-pages-flag: $(PHOTOS_HD) head.html foot.html
 	touch $@
 	./scripts/render-photo-pages
 
@@ -113,3 +116,6 @@ dist/img/icons/gmail.png:
 
 serve:
 	cd dist && python3 -m http.server 8001
+
+dev:
+	make watch & make serve

@@ -24,14 +24,14 @@ async function main () {
       path = path || `/photos/${name}.html`
 
       if (caption) {
-        return `${prefix}[![${name}](${image}) *${caption}*](${path})`
+        return `${prefix}[![${name}](${image})<br>*${caption}*](${path})`
       }
 
       return `${prefix}[![${name}](${image})](${path})`
     })
     .join('\n')
 
-  const title = md.slice(0, md.indexOf('\n')).replace(/^# /, '')
+  const title = md.slice(0, md.indexOf('\n')).replace(/^# /, '').replace(/(<([^>]+)>)/g, '')
 
   let head = fs.readFileSync('head.html', 'utf8')
     .replace('<title>', `<title>${title}`)

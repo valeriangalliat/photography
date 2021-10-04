@@ -16,6 +16,10 @@ h1 {
     margin: 1em 0;
 }
 
+h1 small {
+    font-size: .8rem;
+}
+
 .date {
     color: #bbb;
     font-weight: lighter;
@@ -27,6 +31,10 @@ h1 {
 @media (min-width: 42em) {
     h1 {
         font-size: 4em;
+    }
+
+    h1 small {
+        font-size: 1rem;
     }
 
     .date {
@@ -65,4 +73,20 @@ img {
     .home img {
         max-width: 100%;
     }
+}
+
+.video {
+    position: relative;
+
+    /* Force 16:9 ratio. */
+    padding-bottom: 56.25%;
+}
+
+.video iframe, .video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }

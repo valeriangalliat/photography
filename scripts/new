@@ -22,13 +22,18 @@ echo 'Put all the photos you want to add in this directory, then press enter...'
 open "$dir"
 read
 
+format_date() {
+    # Unix version which will fail with GNU `date`, or fallback to GNU.
+    date -j -f '%Y-%m-%d' "$date" '+%B %Y' 2> /dev/null || date -d "$date" '+%B %Y'
+}
+
 mkdir -p "$year"
-(echo "# $title"; echo) > "$path.md"
+(echo "# $title"; format_date; echo) > "$path.md"
 
 sed '/^## Albums$/q' index.md > index.md.new
 (echo; echo "### [$title](/$path.md)"; echo) >> index.md.new
 
-for photo in $(find "$dir" -type f | awk -F/ '{print $NF}' | sort); do
+for photo in $(find "$dir" -type f | awk -F/ '{print $NF}' | grep -v '^\.' | sort); do
     name=$(echo "$photo" | sed 's/\.[^\.]*$//')
     echo "!$name" >> "$path.md"
     echo "!:$name /$path.md" >> index.md.new
@@ -42,4 +47,5 @@ mv index.md.new index.md
 echo 'Updated index.md'
 
 mv -v "$dir"/* dist/photos/full
+rm -f "$dir/.DS_Store"
 rmdir "$dir"

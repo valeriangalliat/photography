@@ -1,4 +1,4 @@
-# 📸 Photography
+# 📸 Photography<small> by Val</small>
 
 Hey there! 👋
 

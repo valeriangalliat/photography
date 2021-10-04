@@ -30,7 +30,7 @@ those to take pictures of, pretty sure they'll like the style. 😋
 
 The summit (no view though, so sad).
 
-<div class="slide">
+<div class="slide inline-bottom">
 
 * !P2660805
 * !P2660814

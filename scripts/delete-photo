@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+for photo in "$@"; do
+    base=$(basename "$photo" .jpg)
+    rm -vf "dist/photos/$base.html" "dist/photos/full/$photo" "dist/photos/hd/$photo" "dist/photos/thumb/$photo"
+done
