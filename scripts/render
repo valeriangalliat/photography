@@ -19,7 +19,7 @@ async function main () {
       const [pattern, caption] = rest.join('!').split('"')
       let [name, path] = pattern.replace(/^:?/, '').split(' ')
       const thumb = pattern.startsWith(':')
-      const image = `/photos/${thumb ? 'thumb' : 'hd'}/${name}.jpg`
+      const image = `/photos/${thumb ? 'thumb' : 'sd'}/${name}.jpg`
 
       path = path || `/photos/${name}.html`
 

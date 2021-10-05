@@ -1,5 +1,6 @@
 PHOTOS_FULL = $(shell find dist/photos/full -name '*.jpg')
 PHOTOS_HD = $(PHOTOS_FULL:dist/photos/full/%=dist/photos/hd/%)
+PHOTOS_SD = $(PHOTOS_FULL:dist/photos/full/%=dist/photos/sd/%)
 PHOTOS_THUMB = $(PHOTOS_FULL:dist/photos/full/%=dist/photos/thumb/%)
 PHOTOS_HTML = $(PHOTOS_FULL:dist/photos/full/%.jpg=dist/photos/%.html)
 
@@ -11,7 +12,7 @@ SCRIPTS = $(shell find js -name '*.js')
 ICONS = dist/img/icons/403-instagram.svg dist/img/icons/407-twitter.svg dist/img/icons/414-youtube.svg dist/img/icons/433-github.svg dist/img/icons/452-soundcloud.svg dist/img/icons/458-linkedin.svg
 ASSETS = dist/css/normalize.css dist/css/codejam.css dist/css/main.css dist/js/main.js $(ICONS)
 
-build: dist $(PHOTOS_HD) $(PHOTOS_THUMB) $(PHOTOS_HTML) $(HTML) $(ASSETS)
+build: dist $(PHOTOS_HD) $(PHOTOS_SD) $(PHOTOS_THUMB) $(PHOTOS_HTML) $(HTML) $(ASSETS)
 
 watch:
 	npm run watch
@@ -48,6 +49,9 @@ missing: .photos .references
 
 dist/photos/hd/%.jpg: dist/photos/full/%.jpg
 	convert $< -resize 1920x1080^ $@
+
+dist/photos/sd/%.jpg: dist/photos/full/%.jpg
+	convert $< -resize 960x540^ $@
 
 dist/photos/thumb/%.jpg: dist/photos/full/%.jpg
 	convert $< -resize 300x200^ -gravity center -extent 300x200 $@
