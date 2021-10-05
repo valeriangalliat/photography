@@ -105,8 +105,8 @@ days later.
 ## Île Bourdeau
 
 *L'île Boudreau* is a very thin rock formation between *plage du Bassin
-Ouest* and *plage du Bassin Est* (I like how name are straightforward in
-Magdelen Islands).
+Ouest* and *plage du Bassin Est* (I like how names are straightforward
+in Magdelen Islands).
 
 !P2740811
 !P2740820
