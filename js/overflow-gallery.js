@@ -28,6 +28,10 @@ class DynamicHeight {
       img.style.maxHeight = 'unset'
     }
 
+    if (!this.needsAdaptiveHeight()) {
+      return
+    }
+
     const style = getComputedStyle(container)
 
     this.initialMarginTop = Number(style['margin-top'].replace('px', ''))
@@ -42,9 +46,9 @@ class DynamicHeight {
     return slides.every(slide => (slide.offsetWidth / slide.offsetHeight) > 1)
   }
 
-  static needed (slides) {
-    const ratio = (slides[0].offsetWidth / slides[0].offsetHeight).toFixed(1)
-    return slides.slice(1).some(slide => (slide.offsetWidth / slide.offsetHeight).toFixed(1) !== ratio)
+  needsAdaptiveHeight () {
+    const ratio = (this.slides[0].offsetWidth / this.slides[0].offsetHeight).toFixed(1)
+    return this.slides.slice(1).some(slide => (slide.offsetWidth / slide.offsetHeight).toFixed(1) !== ratio)
   }
 
   refreshHeights () {
@@ -147,9 +151,7 @@ export default function OverflowGallery (selector) {
     instances.push(new EscapeParent(container, ul, slides))
 
     if (DynamicHeight.compatible(slides)) {
-      if (DynamicHeight.needed(slides)) {
-        instances.push(new DynamicHeight(container, ul, slides))
-      }
+      instances.push(new DynamicHeight(container, ul, slides))
     } else {
       instances.push(new MatchingHeight(container, ul, slides))
     }
