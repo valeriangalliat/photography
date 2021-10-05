@@ -32,10 +32,13 @@ class DynamicHeight {
       return
     }
 
+    // Because negative margin don't add together, they collapse, we need to
+    // add the container's negative margin to the `<ul>` negative margin we set
+    // later on so that we get the desired effect.
     const style = getComputedStyle(container)
 
-    this.initialMarginTop = Number(style['margin-top'].replace('px', ''))
-    this.initialMarginBottom = Number(style['margin-bottom'].replace('px', ''))
+    this.initialNegativeMarginTop = Math.min(style['margin-top'].replace('px', ''), 0)
+    this.initialNegativeMarginBottom = Math.min(style['margin-bottom'].replace('px', ''), 0)
 
     this.onResize()
 
@@ -81,8 +84,8 @@ class DynamicHeight {
   updateMargin (height) {
     const margin = -1 * (this.container.offsetHeight - height) / 2
 
-    this.container.style.marginTop = `${this.initialMarginTop + margin}px`
-    this.container.style.marginBottom = `${this.initialMarginBottom + margin}px`
+    this.ul.style.marginTop = `${this.initialNegativeMarginTop + margin}px`
+    this.ul.style.marginBottom = `${this.initialNegativeMarginBottom + margin}px`
   }
 
   onResize () {
