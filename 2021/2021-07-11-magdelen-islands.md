@@ -150,7 +150,7 @@ Cap-Alright* as well as stunning views from *la Plaque-Verte*.
 
 ## Butte Ronde
 
-We went back to *Cape-Alright* and hiked the *butte Ronde* which gives a
+We went back to *Cap-Alright* and hiked the *butte Ronde* which gives a
 different view on the lighthouse and the *Plaque-Verte* area as well as
 the surroundings.
 
