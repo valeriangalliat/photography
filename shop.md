@@ -1,6 +1,6 @@
 # 💸 Buy full size JPEG & RAW!
 
-[![ff](/img/val-4.jpg)](/photos/242989947_902803300666398_4415379739264788769_n.html)
+[![Val taking a picture on top of a mountain](/img/val-4.jpg)](/photos/242989947_902803300666398_4415379739264788769_n.html)
 
 If you want to use some of my pictures for your own work, **contact me**! 🧡
 

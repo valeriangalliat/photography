@@ -4,8 +4,10 @@ const fs = require('fs')
 const path = require('path')
 const readline = require('readline')
 const cp = require('child_process')
+const escape = require('escape-html')
 const { exiftool } = require('exiftool-vendored')
 
+const baseUrl = 'https://photography.codejam.info/'
 const exiftoolArgs = ['-fast2', '-ImageWidth', '-ImageHeight', '-DateTimeOriginal', '-Make', '-Model', '-FocalLength', '-FocalLengthIn35mmFormat', '-Aperture', '-Shutterspeed', '-ISO']
 
 const head = fs.readFileSync('head.html', 'utf8')
@@ -105,7 +107,9 @@ function renderTable (name, exif) {
 async function render (index, name) {
   console.log(name)
 
+  const title = `📸 ${name}`
   const exif = await getCachedExif(name)
+
   let style = ''
   let page = ''
 
@@ -114,9 +118,19 @@ async function render (index, name) {
     style = ' style="max-width: none"'
   }
 
+  const image = `${baseUrl}photos/sd/${name}.jpg`
+
+  const metaTags = `  <meta property="og:title" content="${escape(title)}">
+  <meta property="og:image" content="${escape(image)}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@valeriangalliat">
+  <meta name="twitter:creator" content="@valeriangalliat">
+`
+
   page += head
     .replace('<html ', '<html class="photo" ')
-    .replace('<title>', `<title>📸 ${name}`)
+    .replace('<title>', `<title>${escape(title)}`)
+    .replace('</head>', `${metaTags}</head>`)
     .replace(
       '<div class="markdown-body">',
       `<div class="photo-container">

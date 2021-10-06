@@ -1,3 +1,7 @@
+---
+image: /img/val-4.jpg
+---
+
 # 📸 Photography<small> by Val</small>
 
 Hey there! 👋

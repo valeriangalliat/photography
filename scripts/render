@@ -3,12 +3,18 @@
 const fs = require('fs')
 const { promisify } = require('util')
 const marked = require('marked')
+const frontMatter = require('front-matter')
+const escape = require('escape-html')
 const imageSize = promisify(require('image-size'))
+
+const baseUrl = 'https://photography.codejam.info/'
 
 async function main () {
   const path = process.argv[2]
 
-  const md = fs.readFileSync(path, 'utf8')
+  const { attributes, body } = frontMatter(fs.readFileSync(path, 'utf8'))
+
+  const md = body
     .split('\n')
     .map(line => {
       if (!line.match(/(^| )![^[ ]/)) {
@@ -34,13 +40,11 @@ async function main () {
   const title = md.slice(0, md.indexOf('\n')).replace(/^# /, '').replace(/(<([^>]+)>)/g, '')
 
   let head = fs.readFileSync('head.html', 'utf8')
-    .replace('<title>', `<title>${title}`)
+    .replace('<title>', `<title>${escape(title)}`)
 
   if (path === 'index.md') {
     head = head.replace('<body>', '<body class="home">')
   }
-
-  process.stdout.write(head)
 
   let html = marked(md).replaceAll('.md"', '.html"')
 
@@ -61,6 +65,25 @@ async function main () {
     html = html.replace('<p>', '<p class="date">')
   }
 
+  let metaTags = `  <meta property="og:title" content="${escape(title)}">\n`
+
+  const image = attributes.image || refs[0]
+
+  if (image) {
+    const url = new URL(image, baseUrl).href
+
+    metaTags += `  <meta property="og:image" content="${escape(url)}">
+  <meta name="twitter:card" content="summary_large_image">
+`
+  }
+
+  metaTags += `  <meta name="twitter:site" content="@valeriangalliat">
+  <meta name="twitter:creator" content="@valeriangalliat">
+`
+
+  head = head.replace('</head>', `${metaTags}</head>`)
+
+  process.stdout.write(head)
   process.stdout.write(html)
   process.stdout.write(fs.readFileSync('foot.html', 'utf8'))
 }
