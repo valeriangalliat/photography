@@ -88,26 +88,27 @@ dist/js/main.js: $(SCRIPTS)
 dist/img/icons/%.svg: node_modules/icomoon-free-npm/SVG/%.svg
 	cat $< | sed 's/<svg /<svg id="icon" /;s/fill="#000000"/style="fill: var(--color-fill)"/' > $@
 
+dist/photos/thumb/P2680620-Pano-0.jpg: dist/photos/full/P2680620-Pano.jpg
+	convert $< -resize 600x200^ -gravity center -extent 300x200-150+0 $@
+
+dist/photos/thumb/P2680620-Pano-1.jpg: dist/photos/full/P2680620-Pano.jpg
+	convert $< -resize 600x200^ -gravity center -extent 300x200+150+0 $@
+
 dist/img/val-1.jpg: dist/photos/full/IMG_20181204_184340.jpg
-	@# Offset is 45% of full height (1440) minus final height (768) to
-	@# mimic browser's background position behaviour.
-	convert $< -resize 1920x768^ -extent 1920x768+0+302.4 $@
+	magick $< -resize 1280x -crop '1280x512+0+%[fx:45/100*(h-512)]' $@
 
 dist/img/val-2.jpg: dist/photos/full/IMG_20190103_111123.jpg
-	@# Offset is 10% of full height (1440) minus final height (768) to
-	@# mimic browser's background position behaviour.
-	convert $< -resize 1920x768^ -extent 1920x768+0+67.2 $@
+	magick $< -resize 1280x -crop '1280x512+0+%[fx:10/100*(h-512)]' $@
 
-dist/img/val-3.mp4: dist/img/VID_20181121_141159.mp4
-	ffmpeg -i $< -s 960x540 -c:a copy $@
+dist/img/val-3.mp4: VID_20181121_141159.mp4
+	ffmpeg -i $< -s 1280x540 -c:a copy $@
 
-dist/img/val-3.jpg: dist/img/VID_20181121_141159.mp4
-	ffmpeg -v error -nostdin -accurate_seek -ss 00:00:01.933 -i $< -vf scale=iw*sar:ih -frames:v 1 $@
+dist/img/val-3.jpg: VID_20181121_141159.mp4
+	ffmpeg -v error -nostdin -accurate_seek -ss 00:00:01.933 -i $< -vf scale=iw*sar:ih -frames:v 1 -f image2 - \
+		| magick - -resize 1280x $@
 
 dist/img/val-4.jpg: dist/photos/full/242989947_902803300666398_4415379739264788769_n.jpg
-	@# Offset is 40% of full height (1536) minus final height (768) to
-	@# mimic browser's background position behaviour.
-	convert $< -resize 1920x768^ -extent 1920x768+0+307.2 $@
+	magick $< -resize 1280x -crop '1280x512+0+%[fx:40/100*(h-512)]' $@
 
 dist/img/icons/instagram.png:
 	curl 'https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png' | convert - -resize 16x $@
