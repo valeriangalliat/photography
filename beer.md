@@ -12,7 +12,7 @@
 
 ## June 14, 2020, Larouche
 
-Nothing crazy but it's a beer pic, so it hoes here. 😛
+Nothing crazy but it's a beer pic, so it goes here. 😛
 
 !P2690091
 
