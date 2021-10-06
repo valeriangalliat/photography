@@ -6,7 +6,7 @@ const readline = require('readline')
 const cp = require('child_process')
 const { exiftool } = require('exiftool-vendored')
 
-const exiftoolArgs = ['-fast2', '-ImageWidth', '-ImageHeight', '-DateTimeOriginal', '-FileModifyDate', '-Make', '-Model', '-FocalLength', '-FocalLengthIn35mmFormat', '-Aperture', '-Shutterspeed', '-ISO']
+const exiftoolArgs = ['-fast2', '-ImageWidth', '-ImageHeight', '-DateTimeOriginal', '-Make', '-Model', '-FocalLength', '-FocalLengthIn35mmFormat', '-Aperture', '-Shutterspeed', '-ISO']
 
 const head = fs.readFileSync('head.html', 'utf8')
 const foot = fs.readFileSync('foot.html', 'utf8')
@@ -71,7 +71,7 @@ async function getCachedExif (name) {
 function renderTable (name, exif) {
   const rows = []
 
-  const date = (exif.DateTimeOriginal || exif.FileModifyDate)
+  const date = exif.DateTimeOriginal && exif.DateTimeOriginal
     .split('-')[0]
     .replace(':', '-')
     .replace(':', '-')
