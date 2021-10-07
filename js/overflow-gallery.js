@@ -133,14 +133,15 @@ class EscapeParent {
   onResize () {
     this.container.style.marginLeft = ''
 
-    const escapeParentMargin = `${this.container.offsetLeft}px`
+    const offsetLeft = this.container.offsetLeft
+    const offsetRight = document.body.offsetWidth - this.container.offsetLeft - this.container.offsetWidth
 
-    this.container.style.marginLeft = `-${escapeParentMargin}`
-    this.container.style.marginRight = `-${escapeParentMargin}`
+    this.container.style.marginLeft = `-${offsetLeft}px`
+    this.container.style.marginRight = `-${offsetRight}px`
 
-    this.slides[0].style.marginLeft = escapeParentMargin
-    this.slides[this.slides.length - 1].style.marginRight = escapeParentMargin
-    this.ul.style.scrollPadding = `0 ${escapeParentMargin}`
+    this.slides[0].style.marginLeft = `${offsetLeft}px`
+    this.slides[this.slides.length - 1].style.marginRight = `${offsetRight}px`
+    this.ul.style.scrollPadding = `0 ${offsetRight}px 0 ${offsetLeft}px`
   }
 }
 
