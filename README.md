@@ -1,4 +1,4 @@
-# 📷 Photography
+# 📸 Photography
 
 > Photography portfolio.
 
