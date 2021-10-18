@@ -45,7 +45,7 @@ missing: .photos .references
 	@printf '%s\n' $(^:dist/photos/full/%=%) | sort | uniq > $@
 
 .references: $(HTML)
-	@grep --no-filename -o '[^/]*\.jpg' $^ | sed 's/\.html$$/.jpg/' | sort | uniq > $@
+	@grep --no-filename -Eo '/photos/[^\.]*\.(jpg|html)' $^ | sed 's/\.html$$/.jpg/;s/.*\///' | sort | uniq > $@
 
 dist/photos/hd/%.jpg: dist/photos/full/%.jpg
 	convert $< -resize 1920x1080^ $@
