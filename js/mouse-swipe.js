@@ -1,20 +1,22 @@
 import * as scrollSnap from 'scroll-snap-api'
 import debounce from './debounce.js'
 
+let globalActiveSwipe
+
 function addGlobalEventsOnce () {
   if (addGlobalEventsOnce.added) {
     return
   }
 
   addEventListener('mousemove', e => {
-    if (MouseSwipe.activeSwipe) {
-      MouseSwipe.activeSwipe.onMouseMove(e)
+    if (globalActiveSwipe) {
+      globalActiveSwipe.onMouseMove(e)
     }
   })
 
   addEventListener('mouseup', e => {
-    if (MouseSwipe.activeSwipe) {
-      MouseSwipe.activeSwipe.onMouseUp(e)
+    if (globalActiveSwipe) {
+      globalActiveSwipe.onMouseUp(e)
     }
   })
 }
@@ -27,10 +29,6 @@ class MouseSwipeImpl {
 
     el.addEventListener('mousedown', e => this.onMouseDown(e))
     el.addEventListener('click', e => this.onClick(e))
-    el.addEventListener('scroll', debounce(() => this.onScrollEnd(), 100))
-
-    this.el.classList.add('loaded')
-    this.el.style.scrollBehavior = 'unset'
   }
 
   onMouseDown (e) {
@@ -40,23 +38,60 @@ class MouseSwipeImpl {
 
     e.preventDefault()
 
-    MouseSwipe.activeSwipe = this
-
-    this.el.style.scrollSnapType = 'unset'
-    this.el.style.scrollBehavior = 'unset'
+    globalActiveSwipe = this
 
     this.startX = e.clientX
     this.initialScrollLeft = this.el.scrollLeft
   }
 
   onMouseMove (e) {
-    const diff = this.startX - e.clientX
-
-    this.el.scrollLeft = this.initialScrollLeft + diff
+    this.el.scrollLeft = this.initialScrollLeft + (this.startX - e.clientX)
   }
 
   onMouseUp (e) {
-    MouseSwipe.activeSwipe = null
+    globalActiveSwipe = null
+  }
+
+  onResize () {}
+
+  onClick (e) {
+    if (this.isSwipe(e)) {
+      e.preventDefault()
+    }
+  }
+
+  isSwipe (e) {
+    const { startX } = this
+    const endX = e.clientX
+
+    // Moved enough to consider this a swipe?
+    return Math.abs(startX - endX) > 5
+  }
+}
+
+class SnapMouseSwipeImpl extends MouseSwipeImpl {
+  constructor (el) {
+    super(el)
+
+    el.addEventListener('scroll', debounce(() => this.onScrollEnd(), 100))
+
+    this.el.classList.add('loaded')
+    this.el.style.scrollBehavior = 'unset'
+  }
+
+  onMouseDown (e) {
+    super.onMouseDown(e)
+
+    if (e.button !== 0) {
+      return
+    }
+
+    this.el.style.scrollSnapType = 'unset'
+    this.el.style.scrollBehavior = 'unset'
+  }
+
+  onMouseUp (e) {
+    super.onMouseUp(e)
 
     this.el.style.scrollBehavior = ''
 
@@ -84,12 +119,6 @@ class MouseSwipeImpl {
     }
   }
 
-  onClick (e) {
-    if (this.isSwipe(e)) {
-      e.preventDefault()
-    }
-  }
-
   onResize () {
     this.snapPositions = scrollSnap.getScrollSnapPositions(this.el).x.map(x => Math.round(x))
     this.lastSnap = this.snapPositions[this.snapPositions.length - 1]
@@ -102,21 +131,13 @@ class MouseSwipeImpl {
     // back to closest position.
     this.el.style.scrollSnapType = ''
   }
-
-  isSwipe (e) {
-    const { startX } = this
-    const endX = e.clientX
-
-    // Moved enough to consider this a swipe?
-    return Math.abs(startX - endX) > 5
-  }
 }
 
-export default function MouseSwipe (selector) {
+export function MouseSwipe (selector, Instance = MouseSwipeImpl) {
   const instances = []
 
   for (const el of document.querySelectorAll(selector)) {
-    instances.push(new MouseSwipeImpl(el))
+    instances.push(new Instance(el))
   }
 
   return {
@@ -126,4 +147,8 @@ export default function MouseSwipe (selector) {
       }
     }
   }
+}
+
+export function SnapMouseSwipe (selector) {
+  return MouseSwipe(selector, SnapMouseSwipeImpl)
 }
