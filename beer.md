@@ -1,5 +1,20 @@
 # 🍺 Beer
 
+## October 10, 2021, Mont Pinnacle
+
+Brought a "Ta Moins Forte" by Lagabière at the top of the hike! I love
+how the colors of the can match those of the fall landscape behind it.
+
+<div class="slide">
+
+* !P2760295
+* !P2760299
+
+</div>
+
+I've been drinking less alcohol lately, so with 3.8%, this session NEIPA
+was a perfect fit for me!
+
 ## June 28, 2021, Poisson Blanc
 
 <div class="slide">

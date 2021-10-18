@@ -9,7 +9,6 @@ Went backcountry skiing in Tremblant, great experience!
 Always like to have a little beer on top, Belle Gueule actually sent me
 those to take pictures of, pretty sure they'll like the style. 😋
 
-
 <div class="slide">
 
 * !P2660773 "Yéti caché."
