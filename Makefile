@@ -10,7 +10,7 @@ HTML = $(MD:%.md=dist/%.html)
 SCRIPTS = $(shell find js -name '*.js')
 
 ICONS = dist/img/icons/403-instagram.svg dist/img/icons/407-twitter.svg dist/img/icons/414-youtube.svg dist/img/icons/433-github.svg dist/img/icons/452-soundcloud.svg dist/img/icons/458-linkedin.svg
-ASSETS = dist/css/normalize.css dist/css/codejam.css dist/css/main.css dist/js/main.js $(ICONS)
+ASSETS = dist/css/normalize.css dist/css/codejam-20211017.css dist/css/main-20211017.css dist/js/main-20211017.js $(ICONS)
 
 build: dist $(PHOTOS_HD) $(PHOTOS_SD) $(PHOTOS_THUMB) $(PHOTOS_HTML) $(HTML) $(ASSETS)
 
@@ -32,6 +32,15 @@ clean-orphans:
 
 new:
 	./scripts/new
+
+rotate-css:
+	./scripts/rotate css
+
+rotate-codejam-css:
+	./scripts/rotate css codejam
+
+rotate-js:
+	./scripts/rotate js
 
 orphans: .photos .references
 	@comm -23 .photos .references
@@ -70,7 +79,7 @@ dist/%.html: %.md head.html foot.html | $(PHOTOS_HD) $(PHOTOS_THUMB)
 dist/css/normalize.css: node_modules/normalize.css/normalize.css
 	cp $< $@
 
-dist/css/codejam.css:
+dist/css/codejam-20211017.css:
 	curl \
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/colors.css \
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/base.css \
@@ -79,10 +88,10 @@ dist/css/codejam.css:
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/nav.css \
 		| sed 's/^\.content {$$/.markdown-body {/' > $@
 
-dist/css/main.css: css/main.css css/slide.css css/photo.css
+dist/css/main-20211017.css: css/main.css css/slide.css css/photo.css
 	cat $^ > $@
 
-dist/js/main.js: $(SCRIPTS)
+dist/js/main-20211017.js: $(SCRIPTS)
 	npm run build
 
 dist/img/icons/%.svg: node_modules/icomoon-free-npm/SVG/%.svg

@@ -1,7 +1,7 @@
 {
   "scripts": {
     "lint": "standard --env browser js && standard scripts/render scripts/render-photo-pages",
-    "build": "esbuild js/main.js --bundle --minify --outfile=dist/js/main.js",
+    "build": "esbuild js/main.js --bundle --minify --outfile=dist/js/main-20211017.js",
     "watch": "chokidar css js '**/*.md' -c make"
   },
   "dependencies": {

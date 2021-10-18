@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+type=$1; shift
+name=$1
+date=$(date +%Y%m%d)
+
+if [ -z "$name" ]; then
+    name=main
+fi
+
+sed -i.rotate "s/$type\/$name-[0-9]*\.$type/$type\/$name-$date.$type/g" Makefile head.html foot.html package.json
+rm *.rotate
+rm -f "dist/$type/$name-"*".$type"
