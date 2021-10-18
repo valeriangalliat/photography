@@ -12,11 +12,16 @@
 
 ## June 14, 2020, Larouche
 
-Nothing crazy but it's a beer pic, so it goes here. 😛
+Nothing crazy but it's a beer pic, so it goes here. L'Escapade by
+Boréale, a Belgian-style witbier with 3.5% ABV, nice and refreshing sport
+beer during a climbing session. 😛
 
 !P2690091
 
 ## February 5, 2020, Tremblant
+
+Yéti, a lager by Belle Gueule. I love the label! Was a perfect fit for
+this backcountry ski session in Tremblant.
 
 <div class="slide">
 
@@ -28,7 +33,7 @@ Nothing crazy but it's a beer pic, so it goes here. 😛
 
 </div>
 
-Moar beer is always nice. Blonde d'été en plein hiver.
+Moar beer is always nice. This time a Blonde d'été en plein hiver.
 
 <div class="slide">
 
