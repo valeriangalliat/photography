@@ -17,6 +17,9 @@ function debounceAnimate (f) {
   }
 }
 
+// When there's pictures with different ratios, they're maxed to the
+// container width and the height of the container automatically adjust
+// as we scroll.
 class DynamicHeight {
   constructor (container, ul, slides) {
     this.container = container
@@ -43,10 +46,6 @@ class DynamicHeight {
     this.onResize()
 
     ul.addEventListener('scroll', debounceAnimate(() => this.onScroll()))
-  }
-
-  static compatible (slides) {
-    return slides.every(slide => (slide.offsetWidth / slide.offsetHeight) > 1)
   }
 
   needsAdaptiveHeight () {
@@ -98,6 +97,33 @@ class DynamicHeight {
   }
 }
 
+// When there's only portraits in a slider, display exactly two of them
+// in a container width.
+class PortraitMode {
+  constructor (container, ul, slides) {
+    this.container = container
+    this.ul = ul
+    this.imgs = container.querySelectorAll('img')
+    this.onResize()
+  }
+
+  onResize () {
+    const ratio = this.imgs[0].offsetHeight / this.imgs[0].offsetWidth
+    const parentWidth = this.container.parentNode.offsetWidth
+    const gap = Number(getComputedStyle(this.ul)['column-gap'].replace('px', ''))
+
+    // Hack because the left and right padding of parent node is equal
+    // to the gap and we need to exclude them. Find a better way some time.
+    const height = ratio * ((parentWidth - (gap * 3)) / 2)
+
+    for (const img of this.imgs) {
+      img.style.maxHeight = `${height}px`
+    }
+  }
+}
+
+// When there's a mix of landscape and portraits, conform their heights
+// to the smallest one for consistency.
 class MatchingHeight {
   constructor (container, ul, slides) {
     this.imgs = container.querySelectorAll('img')
@@ -154,8 +180,13 @@ export default function OverflowGallery (selector) {
 
     instances.push(new EscapeParent(container, ul, slides))
 
-    if (DynamicHeight.compatible(slides)) {
+    const noPortrait = slides.every(slide => (slide.offsetWidth / slide.offsetHeight) > 1)
+    const onlyPortrait = !noPortrait && slides.every(slide => (slide.offsetWidth / slide.offsetHeight) < 1)
+
+    if (noPortrait) {
       instances.push(new DynamicHeight(container, ul, slides))
+    } else if (onlyPortrait) {
+      instances.push(new PortraitMode(container, ul, slides))
     } else {
       instances.push(new MatchingHeight(container, ul, slides))
     }
