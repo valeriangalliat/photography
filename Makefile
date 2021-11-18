@@ -9,7 +9,7 @@ HTML = $(MD:%.md=dist/%.html)
 
 SCRIPTS = $(shell find js -name '*.js')
 
-ICONS = dist/img/icons/403-instagram.svg dist/img/icons/407-twitter.svg dist/img/icons/414-youtube.svg dist/img/icons/433-github.svg dist/img/icons/452-soundcloud.svg dist/img/icons/458-linkedin.svg
+ICONS = dist/img/icons/403-instagram.svg dist/img/icons/407-twitter.svg dist/img/icons/414-youtube.svg dist/img/icons/433-github.svg dist/img/icons/452-soundcloud.svg dist/img/icons/219-heart.svg
 ASSETS = dist/css/normalize.css dist/css/codejam-20211017.css dist/css/main-20211017.css dist/js/main-20211017.js $(ICONS)
 
 build: dist $(PHOTOS_HD) $(PHOTOS_SD) $(PHOTOS_THUMB) $(PHOTOS_HTML) $(HTML) $(ASSETS)
