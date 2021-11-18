@@ -56,5 +56,5 @@ the middle. You're not supposed to cross to the other half.
 
 !P2760283
 
-Later that day we also hiked [Mont Pinnacle](2021-10-10-mont-pinnacle.md)
+Later that day we also hiked [Mont Pinacle](2021-10-10-mont-pinacle.md)
 so go check it out if you want to continue the journey!

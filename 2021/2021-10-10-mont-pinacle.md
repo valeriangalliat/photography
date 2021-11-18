@@ -1,4 +1,4 @@
-# 🏞 Mont Pinnacle
+# 🏞 Mont Pinacle
 October 2021
 
 A bit of a crowded hike, but it's short and the panorama at the top is
@@ -29,7 +29,7 @@ it seems. I went there too for the last picture of this album.
 !P2760306
 !P2760307-Pano
 
-Mont Pinnacle also features a big climbing wall with lots of known trad
+Mont Pinacle also features a big climbing wall with lots of known trad
 routes (and a handful of sport too). Might go there with a rope some
 day!
 

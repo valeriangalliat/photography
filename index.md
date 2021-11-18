@@ -24,12 +24,12 @@ including the original RAW files and Lightroom edits. Enjoy! ✨
 
 ## October 2021
 
-### [🏞 Mont Pinnacle](/2021/2021-10-10-mont-pinnacle.md)
+### [🏞 Mont Pinacle](/2021/2021-10-10-mont-pinacle.md)
 
-!:P2760299 /2021/2021-10-10-mont-pinnacle.md
-!:P2760305 /2021/2021-10-10-mont-pinnacle.md
-!:P2760319 /2021/2021-10-10-mont-pinnacle.md
-!:P2760322 /2021/2021-10-10-mont-pinnacle.md
+!:P2760299 /2021/2021-10-10-mont-pinacle.md
+!:P2760305 /2021/2021-10-10-mont-pinacle.md
+!:P2760319 /2021/2021-10-10-mont-pinacle.md
+!:P2760322 /2021/2021-10-10-mont-pinacle.md
 
 ### [🏕 Montagne de Marbre](/2021/2021-10-10-montagne-de-marbre.md)
 
