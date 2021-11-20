@@ -24,6 +24,13 @@ including the original RAW files and Lightroom edits. Enjoy! ✨
 
 ## October 2021
 
+### [Owl's Head](/2021/2021-10-24-owls-head.md)
+
+!:P2760382 /2021/2021-10-24-owls-head.md
+!:P2760396 /2021/2021-10-24-owls-head.md
+!:P2760398 /2021/2021-10-24-owls-head.md
+!:P2760413 /2021/2021-10-24-owls-head.md
+
 ### [🏞 Mont Pinacle](/2021/2021-10-10-mont-pinacle.md)
 
 !:P2760299 /2021/2021-10-10-mont-pinacle.md
