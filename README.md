@@ -32,7 +32,7 @@ the `index.md`.
 If in a Markdown file you want to quickly reference photos by their
 name, you can write the following:
 
-```md
+```markdown
 hd P0000001
 ahd P0000002 /foo
 athumb P0000003 /foo
@@ -46,7 +46,7 @@ Then run it through `./md`, for example in Vim, type:
 
 It will turn the previous input into:
 
-```md
+```markdown
 [![P0000001](/photos/hd/P0000001.jpg)](/photos/P0000001.md)
 [![P0000002](/photos/hd/P0000002.jpg)](/foo)
 [![P0000003](/photos/thumb/P0000003.jpg)](/foo)
