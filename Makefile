@@ -10,7 +10,7 @@ HTML = $(MD:%.md=dist/%.html)
 SCRIPTS = $(shell find js -name '*.js')
 
 ICONS = dist/img/icons/403-instagram.svg dist/img/icons/407-twitter.svg dist/img/icons/414-youtube.svg dist/img/icons/433-github.svg dist/img/icons/452-soundcloud.svg dist/img/icons/219-heart.svg
-ASSETS = dist/css/normalize.css dist/css/codejam-20211017.css dist/css/main-20211017.css dist/js/main-20211017.js $(ICONS)
+ASSETS = dist/css/normalize.css dist/css/codejam-20220520.css dist/css/main-20220520.css dist/js/main-20211017.js $(ICONS)
 
 build: dist $(PHOTOS_HD) $(PHOTOS_SD) $(PHOTOS_THUMB) $(PHOTOS_HTML) $(HTML) $(ASSETS)
 
@@ -79,7 +79,7 @@ dist/%.html: %.md head.html foot.html | $(PHOTOS_HD) $(PHOTOS_THUMB)
 dist/css/normalize.css: node_modules/normalize.css/normalize.css
 	cp $< $@
 
-dist/css/codejam-20211017.css:
+dist/css/codejam-20220520.css:
 	curl \
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/colors.css \
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/base.css \
@@ -88,7 +88,7 @@ dist/css/codejam-20211017.css:
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/nav.css \
 		> $@
 
-dist/css/main-20211017.css: css/main.css css/slide.css css/photo.css
+dist/css/main-20220520.css: css/main.css css/slide.css css/photo.css
 	cat $^ > $@
 
 dist/js/main-20211017.js: $(SCRIPTS)
