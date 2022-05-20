@@ -5,6 +5,8 @@ website most of the pictures that I took since I got my camera in 2017.
 
 [![Val taking a photo in a kitchen](/img/val-1.jpg)](/photos/IMG_20181204_184340.html)
 
+## Gear
+
 I shoot with a Panasonic LX100 because it's lightweight and compact
 while still having manual controls for most settings that I care about.
 It also shoots 4K video which, while irrelevant for this website, is
@@ -25,3 +27,17 @@ depth of field), it's still pretty fucking good if you ask me, and the
 fact it enables me to have a proper camera in my hands in situations
 where I would likely not have bothered to bring with me a full DSLR
 setup is definitely worth the tradeoff.
+
+## Contact
+
+If you want to use some of my pictures for your own work, **contact me**! 🧡
+
+<table>
+  <tr>
+    <th><a href="mailto:val@codejam.info"><sub><img src="/img/icons/gmail.png" width="16"></sub> Email</a></th>
+    <th><a href="https://www.instagram.com/funkyval_/"><sub><img src="/img/icons/instagram.png" width="16"></sub> Instagram</a></th>
+    <th><a href="https://twitter.com/valeriangalliat"><sub><img src="/img/icons/twitter.png" width="16"></sub> Twitter</a></th>
+  </tr>
+</table>
+
+[![Val taking a picture on top of a mountain](/img/val-4.jpg)](/photos/242989947_902803300666398_4415379739264788769_n.html)
