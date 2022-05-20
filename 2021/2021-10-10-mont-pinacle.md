@@ -33,7 +33,7 @@ Mont Pinacle also features a big climbing wall with lots of known trad
 routes (and a handful of sport too). Might go there with a rope some
 day!
 
-<div class="slide">
+<div class="slide inline-bottom">
 
 * !P2760316
 * !P2760318

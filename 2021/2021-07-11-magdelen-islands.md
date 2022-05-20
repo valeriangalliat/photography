@@ -231,7 +231,7 @@ A road that I found very pretty near *Belle-Anse*.
 
 The ferry in the evening.
 
-<div class="slide">
+<div class="slide inline-bottom">
 
 * !P2750344
 * !P2750350
