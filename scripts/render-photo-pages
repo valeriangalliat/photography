@@ -81,7 +81,7 @@ function renderTable (name, exif) {
 
   const fields = [
     ['Name', name],
-    ['Original resolution', `${exif.ImageWidth}x${exif.ImageHeight} (<a href="/shop.html">buy full size</a>)`],
+    ['Original resolution', `${exif.ImageWidth}x${exif.ImageHeight} (<a href="/about.html#contact">contact me</a> for the full fize)`],
     ['Date', date],
     ['Make', exif.Make],
     ['Model', exif.Model],
