@@ -86,7 +86,7 @@ dist/css/codejam-20211017.css:
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/footer.css \
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/header.css \
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/nav.css \
-		| sed 's/^\.content {$$/.markdown-body {/' > $@
+		> $@
 
 dist/css/main-20211017.css: css/main.css css/slide.css css/photo.css
 	cat $^ > $@

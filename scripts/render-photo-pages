@@ -132,13 +132,13 @@ async function render (index, name) {
     .replace('<title>', `<title>${escape(title)}`)
     .replace('</head>', `${metaTags}</head>`)
     .replace(
-      '<div class="markdown-body">',
+      '<div class="content">',
       `<div class="photo-container">
     <a href="/photos/hd/${name}.jpg">
       <img src="/photos/hd/${name}.jpg"${style}>
     </a>
   </div>
-  <div class="markdown-body">`)
+  <div class="content">`)
 
   page += `${renderTable(name, exif)}
     <ul class="references">

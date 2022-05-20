@@ -1,5 +1,5 @@
 .slide {
-    margin: 2rem 0;
+    margin-bottom: 2rem;
 }
 
 /* Hack to make up for the fact that I can't easily in Markdown
@@ -9,11 +9,12 @@
  * This will eat the margins around in order to look like it's inline.
  */
 .slide.inline {
-    margin: -2rem 0;
+    margin-top: -2rem;
+    margin-bottom: 0;
 }
 
 .slide.inline + .slide.inline {
-    margin-top: 2rem;
+    margin-top: 0;
 }
 
 .slide.inline-top {
@@ -21,7 +22,7 @@
 }
 
 .slide.inline-bottom {
-    margin-bottom: -2rem;
+    margin-bottom: 0;
 }
 
 .slide ul {
