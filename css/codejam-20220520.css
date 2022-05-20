@@ -83,12 +83,12 @@
     --pink-9: #6d224f;
 }
 html {
-    font: 1.25em/1.5 "Times New Roman", serif;
+    font: 1.25em/1.5 "Georgia", serif;
     background: var(--white);
     color: var(--black);
 }
 
-.markdown-body {
+.content {
     margin-left: auto;
     margin-right: auto;
     max-width: 45rem;
@@ -105,8 +105,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Helvetica Neue", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote, pre, figure {
-    margin: var(--vertical-margin, 2rem) 0;
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote, pre, figure, hr,
+.content iframe,
+.content table {
+    margin: 0 0 var(--vertical-margin, 2rem);
 }
 
 h1.has-subtitle {
@@ -173,7 +175,7 @@ dt {
 
 code, kbd, samp {
     font-family: "Courier New", monospace;
-    font-size: .75em;
+    font-size: .8em;
     background: var(--gray-1);
     padding: .25em .5em;
 }
@@ -183,7 +185,7 @@ code, kbd, samp {
 }
 
 kbd {
-    font-size: .6em;
+    font-size: .7em;
     border: 1px solid var(--gray-2);
     border-bottom: 2px solid var(--gray-2);
     border-radius: .75em;
@@ -223,9 +225,6 @@ ul {
 ol {
     /* Try to match roughly a single digit and a dot. */
     padding-left: 2ch;
-
-    /* Deal with lists on the side of floats... */
-    overflow: hidden;
 }
 
 img, video {
@@ -236,7 +235,7 @@ button, input, optgroup, select, textarea {
     background: transparent;
     color: var(--black);
     font-family: "Helvetica Neue", sans-serif;
-    font-size: .75em;
+    font-size: .8em;
     line-height: normal;
     padding: .5em 1em;
     border: 1px solid var(--gray-3);
@@ -268,6 +267,10 @@ button:hover {
     cursor: pointer;
 }
 
+iframe {
+    border: 1px solid var(--gray-2);
+}
+
 .float-wrapper::after {
     display: table;
     clear: both;
@@ -276,14 +279,6 @@ button:hover {
 
 .float-inner {
     overflow: hidden;
-}
-
-.float-inner > :first-child {
-    margin-top: 0;
-}
-
-.float-inner > :last-child {
-    margin-bottom: 0;
 }
 footer {
     /* Match content container width. */
@@ -310,6 +305,10 @@ footer a:hover {
     color: var(--black);
     text-decoration: none;
 }
+
+.footnotes p {
+    margin: 0;
+}
 @media (min-width: 42em) {
     header .content {
         margin-top: 2rem;
@@ -320,6 +319,64 @@ footer a:hover {
     header .content {
         margin-top: 5em;
     }
+}
+
+.hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2rem;
+}
+
+.hero .header-inner {
+    background-color: rgba(0, 0, 0, .1);
+    padding: 4em 0 1em;
+}
+
+.hero .content {
+    margin-top: 14vw;
+    margin-bottom: 8vw;
+}
+
+.hero h1 {
+    text-shadow: 1px 2px rgba(0, 0, 0, .1);
+    color: var(--white);
+}
+
+.post .hero .tagline {
+    color: var(--white);
+}
+
+.post .hero .date {
+    color: var(--gray-2);
+}
+
+.hero code {
+    background: none;
+}
+
+.hero:hover .hero-credit {
+    opacity: 1;
+}
+
+.hero-credit {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: .8em;
+    position: absolute;
+    right: 1em;
+    bottom: .5em;
+    opacity: 0;
+    transition: opacity 100ms;
+}
+
+.hero-credit,
+.hero-credit:visited {
+    color: var(--gray-2);
+}
+
+.hero-credit:hover {
+    color: var(--white);
+    text-decoration: none;
 }
 nav {
     display: flex;
@@ -345,6 +402,9 @@ nav ul {
     padding-left: 0;
     display: flex;
     justify-content: center;
+
+    /* Negative horizontal margin to make up for the fact each `<li>`
+     * has horizontal padding. */
     margin: 1em -1em;
 }
 
