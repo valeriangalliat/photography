@@ -1,4 +1,4 @@
-# ⛰ Adirondacks
+# ⛰️ Adirondacks
 September 2019
 
 !P2650410

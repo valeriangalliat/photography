@@ -1,4 +1,4 @@
-# 🏞 Mont Pinacle
+# 🏞️ Mont Pinacle
 October 2021
 
 A bit of a crowded hike, but it's short and the panorama at the top is

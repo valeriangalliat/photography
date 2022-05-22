@@ -1,4 +1,4 @@
-# ⛰ Acropole des Draveurs
+# ⛰️ Acropole des Draveurs
 September 2021
 
 Also known as *Montagne des Érables*, crowded hike but cool views!

@@ -1,4 +1,4 @@
-# ⛰ Indian Head (Adirondacks)
+# ⛰️ Indian Head (Adirondacks)
 August 2019
 
 !P2640992

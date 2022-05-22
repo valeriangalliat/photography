@@ -1,4 +1,4 @@
-# 🌬 East Newfoundland
+# 🌬️ East Newfoundland
 November 2018
 
 Cuckold's Cove.

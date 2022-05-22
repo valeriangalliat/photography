@@ -1,4 +1,4 @@
-# ⛰ Ouareau Summit
+# ⛰️ Ouareau Summit
 May 2020
 
 Went to Ouareau forest for block climbing right when parks opened up after

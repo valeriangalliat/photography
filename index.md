@@ -28,14 +28,14 @@ If you want to know more about me, [read this](/about.md).
 !:P2760398 /2021/2021-10-24-owls-head.md
 !:P2760413 /2021/2021-10-24-owls-head.md
 
-### [🏞 Mont Pinacle](/2021/2021-10-10-mont-pinacle.md)
+### [🏞️ Mont Pinacle](/2021/2021-10-10-mont-pinacle.md)
 
 !:P2760299 /2021/2021-10-10-mont-pinacle.md
 !:P2760305 /2021/2021-10-10-mont-pinacle.md
 !:P2760319 /2021/2021-10-10-mont-pinacle.md
 !:P2760322 /2021/2021-10-10-mont-pinacle.md
 
-### [🏕 Montagne de Marbre](/2021/2021-10-10-montagne-de-marbre.md)
+### [🏕️ Montagne de Marbre](/2021/2021-10-10-montagne-de-marbre.md)
 
 !:P2760203 /2021/2021-10-10-montagne-de-marbre.md
 !:P2760221 /2021/2021-10-10-montagne-de-marbre.md
@@ -44,7 +44,7 @@ If you want to know more about me, [read this](/about.md).
 
 ## September 2021
 
-### [🏕 Poisson Blanc](/2021/2021-09-25-poisson-blanc.md)
+### [🏕️ Poisson Blanc](/2021/2021-09-25-poisson-blanc.md)
 
 !:P2760071 /2021/2021-09-25-poisson-blanc.md
 !:P2760099 /2021/2021-09-25-poisson-blanc.md
@@ -58,7 +58,7 @@ If you want to know more about me, [read this](/about.md).
 !:P2750831-Pano /2021/2021-09-19-montagne-noire.md
 !:P2750838 /2021/2021-09-19-montagne-noire.md
 
-### [⛰ Acropole des Draveurs](/2021/2021-09-11-acropole-des-draveurs.md)
+### [⛰️ Acropole des Draveurs](/2021/2021-09-11-acropole-des-draveurs.md)
 
 !:P2750675 /2021/2021-09-11-acropole-des-draveurs.md
 !:P2750683 /2021/2021-09-11-acropole-des-draveurs.md
@@ -72,7 +72,7 @@ If you want to know more about me, [read this](/about.md).
 !:P2750631 /2021/2021-09-09-parc-du-bic.md
 !:P2750645 /2021/2021-09-09-parc-du-bic.md
 
-### [🏕 Kamouraska](/2021/2021-09-08-kamouraska.md)
+### [🏕️ Kamouraska](/2021/2021-09-08-kamouraska.md)
 
 !:IMG_20210908_123759 /2021/2021-09-08-kamouraska.md
 !:IMG_20210908_072751-Pano /2021/2021-09-08-kamouraska.md
@@ -99,7 +99,7 @@ If you want to know more about me, [read this](/about.md).
 
 ## January 2021
 
-### [🏝 Dominican Republic](/2021/2021-01-04-dominican-republic.md)
+### [🏝️ Dominican Republic](/2021/2021-01-04-dominican-republic.md)
 
 !:P2720766 /2021/2021-01-04-dominican-republic.md
 !:P2720768 /2021/2021-01-04-dominican-republic.md
@@ -116,14 +116,14 @@ If you want to know more about me, [read this](/about.md).
 
 ## May 2020
 
-### [⛰ Ouareau Summit](/2020/2020-05-20-ouareau-summit.md)
+### [⛰️ Ouareau Summit](/2020/2020-05-20-ouareau-summit.md)
 
 !:P2680620-Pano-0 /2020/2020-05-20-ouareau-summit.md
 !:P2680620-Pano-1 /2020/2020-05-20-ouareau-summit.md
 
 ## February 2020
 
-### [⛷ Backcountry Tremblant](/2020/2020-02-05-backcountry-tremblant.md)
+### [⛷️ Backcountry Tremblant](/2020/2020-02-05-backcountry-tremblant.md)
 
 !:P2660765 /2020/2020-02-05-backcountry-tremblant.md
 !:P2660779 /2020/2020-02-05-backcountry-tremblant.md
@@ -154,7 +154,7 @@ If you want to know more about me, [read this](/about.md).
 
 ## September 2019
 
-### [⛰ Marcy Dam (Adirondacks)](/2019/2019-09-29-marcy-dam-adirondacks.md)
+### [⛰️ Marcy Dam (Adirondacks)](/2019/2019-09-29-marcy-dam-adirondacks.md)
 
 !:P2650428 /2019/2019-09-29-marcy-dam-adirondacks.md
 !:P2650455 /2019/2019-09-29-marcy-dam-adirondacks.md
@@ -163,7 +163,7 @@ If you want to know more about me, [read this](/about.md).
 
 ## August 2019
 
-### [⛰ Indian Head (Adirondacks)](/2019/2019-08-31-indian-head-adirondacks.md)
+### [⛰️ Indian Head (Adirondacks)](/2019/2019-08-31-indian-head-adirondacks.md)
 
 !:P2650052 /2019/2019-08-31-indian-head-adirondacks.md
 !:P2650056 /2019/2019-08-31-indian-head-adirondacks.md
@@ -204,14 +204,14 @@ If you want to know more about me, [read this](/about.md).
 
 ## April 2019
 
-### [🏛 Paris](/2019/2019-04-20-paris.md)
+### [🏛️ Paris](/2019/2019-04-20-paris.md)
 
 !:P2620798 /2019/2019-04-20-paris.md
 !:P2620810 /2019/2019-04-20-paris.md
 !:P2620822 /2019/2019-04-20-paris.md
 !:P2620847 /2019/2019-04-20-paris.md
 
-### [🏔 Grenoble](/2019/2019-04-19-grenoble.md)
+### [🏔️ Grenoble](/2019/2019-04-19-grenoble.md)
 
 !:P2620763 /2019/2019-04-19-grenoble.md
 !:P2620770 /2019/2019-04-19-grenoble.md
@@ -230,7 +230,7 @@ If you want to know more about me, [read this](/about.md).
 !:P2610605 /2019/2019-04-08-amsterdam.md
 !:P2610763 /2019/2019-04-08-amsterdam.md
 
-### [🏔 Vosges](/2019/2019-04-06-vosges.md)
+### [🏔️ Vosges](/2019/2019-04-06-vosges.md)
 
 !:P2610357 /2019/2019-04-06-vosges.md
 !:P2610360 /2019/2019-04-06-vosges.md
@@ -246,7 +246,7 @@ If you want to know more about me, [read this](/about.md).
 !:P2600976 /2019/2019-02-23-rawdon.md
 !:P2600984 /2019/2019-02-23-rawdon.md
 
-### [⛷ Le Massif](/2019/2019-02-17-le-massif.md)
+### [⛷️ Le Massif](/2019/2019-02-17-le-massif.md)
 
 !:IMG_20190217_133748-Pano /2019/2019-02-17-le-massif.md
 !:IMG_20190217_134515-Pano /2019/2019-02-17-le-massif.md
@@ -276,14 +276,14 @@ If you want to know more about me, [read this](/about.md).
 !:P2600394 /2018/2018-11-28-east-newfoundland.md
 !:P2600402 /2018/2018-11-28-east-newfoundland.md
 
-### [❄ West Newfoundland](/2018/2018-11-24-west-newfoundland.md)
+### [❄️ West Newfoundland](/2018/2018-11-24-west-newfoundland.md)
 
 !:P2590714 /2018/2018-11-24-west-newfoundland.md
 !:P2590837 /2018/2018-11-24-west-newfoundland.md
 !:P2600039 /2018/2018-11-24-west-newfoundland.md
 !:P2600157 /2018/2018-11-24-west-newfoundland.md
 
-### [🌬 East Newfoundland](/2018/2018-11-20-east-newfoundland.md)
+### [🌬️ East Newfoundland](/2018/2018-11-20-east-newfoundland.md)
 
 !:P2590006 /2018/2018-11-20-east-newfoundland.md
 !:P2590083 /2018/2018-11-20-east-newfoundland.md
@@ -300,7 +300,7 @@ If you want to know more about me, [read this](/about.md).
 
 ## October 2018
 
-### [🏍 Montebello](/2018/2018-10-14-montebello.md)
+### [🏍️ Montebello](/2018/2018-10-14-montebello.md)
 
 !:P2580500 /2018/2018-10-14-montebello.md
 !:P2580502 /2018/2018-10-14-montebello.md
@@ -318,7 +318,7 @@ If you want to know more about me, [read this](/about.md).
 
 ## September 2018
 
-### [🏍 Eastern Townships](/2018/2018-09-01-eastern-townships.md)
+### [🏍️ Eastern Townships](/2018/2018-09-01-eastern-townships.md)
 
 !:P2570814 /2018/2018-09-01-eastern-townships.md
 !:P2570822 /2018/2018-09-01-eastern-townships.md
@@ -336,11 +336,11 @@ If you want to know more about me, [read this](/about.md).
 
 ## July 2018
 
-### [🏍 Rang des Pins Rouges](/2018/2018-07-28-rang-des-pins-rouges.md)
+### [🏍️ Rang des Pins Rouges](/2018/2018-07-28-rang-des-pins-rouges.md)
 
 !:P2570581 /2018/2018-07-28-rang-des-pins-rouges.md
 
-### [🏍 Tremblant](/2018/2018-07-21-tremblant.md)
+### [🏍️ Tremblant](/2018/2018-07-21-tremblant.md)
 
 !:P2570525 /2018/2018-07-21-tremblant.md
 
@@ -349,7 +349,7 @@ If you want to know more about me, [read this](/about.md).
 !:P2570471 /2018/2018-07-14-ouareau.md
 !:P2570487 /2018/2018-07-14-ouareau.md
 
-### [🏖 Mastigouche](/2018/2018-07-07-mastigouche.md)
+### [🏖️ Mastigouche](/2018/2018-07-07-mastigouche.md)
 
 !:P2570414 /2018/2018-07-07-mastigouche.md
 !:P2570423 /2018/2018-07-07-mastigouche.md
@@ -369,14 +369,14 @@ If you want to know more about me, [read this](/about.md).
 
 ## May 2018
 
-### [🏔 Alps](/2018/2018-05-27-alps.md)
+### [🏔️ Alps](/2018/2018-05-27-alps.md)
 
 !:P2560226 /2018/2018-05-27-alps.md
 !:P2560359 /2018/2018-05-27-alps.md
 !:P2560454 /2018/2018-05-27-alps.md
 !:P2560528 /2018/2018-05-27-alps.md
 
-### [🏖 Calanques](/2018/2018-05-19-calanques.md)
+### [🏖️ Calanques](/2018/2018-05-19-calanques.md)
 
 !:P2550120 /2018/2018-05-19-calanques.md
 !:P2550173 /2018/2018-05-19-calanques.md
@@ -392,13 +392,13 @@ If you want to know more about me, [read this](/about.md).
 !:P2540797 /2018/2018-03-31-weir.md
 !:P2540806 /2018/2018-03-31-weir.md
 
-### [⛷ Le Massif](/2018/2018-03-18-le-massif.md)
+### [⛷️ Le Massif](/2018/2018-03-18-le-massif.md)
 
 !:P2540731 /2018/2018-03-18-le-massif.md
 !:P2540585 /2018/2018-03-18-le-massif.md
 !:IMG_20180318_110954-Pano /2018/2018-03-18-le-massif.md
 
-### [❄ Magog](/2018/2018-03-03-magog.md)
+### [❄️ Magog](/2018/2018-03-03-magog.md)
 
 !:P2540274 /2018/2018-03-03-magog.md
 !:P2540307 /2018/2018-03-03-magog.md
@@ -407,7 +407,7 @@ If you want to know more about me, [read this](/about.md).
 
 ## February 2018
 
-### [⛏ Ice climbing](/2018/2018-02-24-ice-climbing.md)
+### [⛏️ Ice climbing](/2018/2018-02-24-ice-climbing.md)
 
 !:P2540110 /2018/2018-02-24-ice-climbing.md
 !:P2540148 /2018/2018-02-24-ice-climbing.md
@@ -439,14 +439,14 @@ If you want to know more about me, [read this](/about.md).
 
 ## August 2017
 
-### [🛥 Annecy](/2017/2017-08-27-annecy.md)
+### [🛥️ Annecy](/2017/2017-08-27-annecy.md)
 
 !:P1040883 /2017/2017-08-27-annecy.md
 !:P1050047 /2017/2017-08-27-annecy.md
 !:P1050149 /2017/2017-08-27-annecy.md
 !:P1050252 /2017/2017-08-27-annecy.md
 
-### [⛰ Pic Saint-Michel](/2017/2017-08-25-pic-saint-michel.md)
+### [⛰️ Pic Saint-Michel](/2017/2017-08-25-pic-saint-michel.md)
 
 !:P1040742 /2017/2017-08-25-pic-saint-michel.md
 !:P1040754 /2017/2017-08-25-pic-saint-michel.md
@@ -461,7 +461,7 @@ If you want to know more about me, [read this](/about.md).
 
 ## July 2017
 
-### [🏔 Road trip from Montreal to Vancouver](/2017/2017-07-14-road-trip.md)
+### [🏔️ Road trip from Montreal to Vancouver](/2017/2017-07-14-road-trip.md)
 
 !:P1020139 /2017/2017-07-14-road-trip.md
 !:P1020772 /2017/2017-07-14-road-trip.md
@@ -505,7 +505,7 @@ If you want to know more about me, [read this](/about.md).
 !:P1000710-Edit /2017/2017-06-18-chutes.md
 !:P1000747 /2017/2017-06-18-chutes.md
 
-### [🏙 Montreal](/2017/2017-06-14-montreal.md)
+### [🏙️ Montreal](/2017/2017-06-14-montreal.md)
 
 !:P1000593 /2017/2017-06-14-montreal.md
 !:P1000595 /2017/2017-06-14-montreal.md

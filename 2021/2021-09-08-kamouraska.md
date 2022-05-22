@@ -1,4 +1,4 @@
-# 🏕 Kamouraska
+# 🏕️ Kamouraska
 September 2021
 
 Went climbing in Kamouraska, but I was too busy, well, climbing, for

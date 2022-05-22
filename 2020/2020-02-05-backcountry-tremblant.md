@@ -1,4 +1,4 @@
-# ⛷ Backcountry Tremblant
+# ⛷️ Backcountry Tremblant
 February 2020
 
 Went backcountry skiing in Tremblant, great experience!

@@ -1,4 +1,4 @@
-# 🏕 Montagne de Marbre
+# 🏕️ Montagne de Marbre
 October 2021
 
 We started by an evening hike. After reaching the camp at the base of

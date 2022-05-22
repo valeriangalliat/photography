@@ -1,4 +1,4 @@
-# 🏍 Eastern Townships
+# 🏍️ Eastern Townships
 September 2018
 
 !P2570771 "La bonne asphalte séchée au soleil des Cantons-de-l'Est pour le goûter."

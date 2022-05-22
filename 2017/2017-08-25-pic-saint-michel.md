@@ -1,4 +1,4 @@
-# ⛰ Pic Saint-Michel
+# ⛰️ Pic Saint-Michel
 August 2017
 
 After Provence, I went back for a short time in Grenoble before heading

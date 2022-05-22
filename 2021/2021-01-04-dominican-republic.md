@@ -1,4 +1,4 @@
-# 🏝 Dominican Republic
+# 🏝️ Dominican Republic
 January 2021
 
 I didn't take many photos with my camera there, I mostly used my phone
