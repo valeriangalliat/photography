@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>📸 P2560190</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.add(localStorage.theme || ((matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light'))</script>
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/codejam-20220520.css">
   <link rel="stylesheet" href="/css/main-20220520.css">
@@ -20,56 +21,7 @@
       <li><a href="/">Home</a></li>
       <li><a href="/about.html">About</a></li>
       <li><a href="https://www.codejam.info/">Blog</a></li>
-    </ul>
-    <ul class="social">
-      <li>
-        <a href="https://www.youtube.com/FunkyVal">
-          <svg width="16" height="16" viewBox="0 0 16 16">
-            <title>YouTube</title>
-            <use href="/img/icons/414-youtube.svg#icon"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/funkyval_/">
-          <svg width="16" height="16" viewBox="0 0 16 16">
-            <title>Instagram</title>
-            <use href="/img/icons/403-instagram.svg#icon"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/valeriangalliat">
-          <svg width="16" height="16" viewBox="0 0 16 16">
-            <title>Twitter</title>
-            <use href="/img/icons/407-twitter.svg#icon"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/valeriangalliat">
-          <svg width="16" height="16" viewBox="0 0 16 16">
-            <title>GitHub</title>
-            <use href="/img/icons/433-github.svg#icon"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="https://ko-fi.com/funkyval">
-          <svg width="16" height="16" viewBox="0 0 16 16">
-            <title>Buy me a coffee!</title>
-            <use href="/img/icons/219-heart.svg#icon"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="https://soundcloud.com/funkyval">
-          <svg width="16" height="16" viewBox="0 0 16 16">
-            <title>SoundCloud</title>
-            <use href="/img/icons/452-soundcloud.svg#icon"></use>
-          </svg>
-        </a>
-      </li>
+      <li class="pull"><button title="Toggle theme" class="change-color-theme">🌝</button></li>
     </ul>
   </nav>
   <div class="photo-container">
@@ -125,9 +77,58 @@
     </ul>
   </div>
   <footer>
-    <p>
-      Made with 🧡 by <a href="https://val.codejam.info/">Val</a> in Montreal.
-    </p>
+    <div class="footer-inner">
+      <figure>
+        <a href="https://www.codejam.info/val.html">
+          <img alt="The author (Val) looking at a beer glass shining in the beautiful sun" src="https://www.codejam.info/img/profile.jpg">
+        </a>
+      </figure>
+      <div class="footer-content">
+        <p>Made with 🧡 by <a href="/val.html">Val</a>.</p>
+        <ul class="social">
+          <li>
+            <a href="https://twitter.com/valeriangalliat">
+              <svg width="16" height="16" viewBox="0 0 16 16">
+                <title>Twitter</title>
+                <use href="/img/icons/407-twitter.svg#icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/valeriangalliat">
+              <svg width="16" height="16" viewBox="0 0 16 16">
+                <title>GitHub</title>
+                <use href="/img/icons/433-github.svg#icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/funkyval_/">
+              <svg width="16" height="16" viewBox="0 0 16 16">
+                <title>Instagram</title>
+                <use href="/img/icons/403-instagram.svg#icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/FunkyVal">
+              <svg width="16" height="16" viewBox="0 0 16 16">
+                <title>YouTube</title>
+                <use href="/img/icons/414-youtube.svg#icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://ko-fi.com/funkyval">
+              <svg width="16" height="16" viewBox="0 0 16 16">
+                <title>Buy me a coffee!</title>
+                <use href="/img/icons/219-heart.svg#icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
   <script src="/js/main-20211017.js"></script>
 </body>
