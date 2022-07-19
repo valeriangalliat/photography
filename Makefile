@@ -86,6 +86,7 @@ dist/css/codejam-20220520.css:
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/footer.css \
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/header.css \
 		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/nav.css \
+		https://raw.githubusercontent.com/valeriangalliat/blog/master/css/components/social.css \
 		> $@
 
 dist/css/main-20220520.css: css/main.css css/slide.css css/photo.css
@@ -93,9 +94,6 @@ dist/css/main-20220520.css: css/main.css css/slide.css css/photo.css
 
 dist/js/main-20211017.js: $(SCRIPTS)
 	npm run build
-
-dist/img/icons/%.svg: node_modules/icomoon-free-npm/SVG/%.svg
-	cat $< | sed 's/<svg /<svg id="icon" /;s/fill="#000000"/style="fill: var(--color-fill)"/' > $@
 
 dist/photos/thumb/P2680620-Pano-0.jpg: dist/photos/full/P2680620-Pano.jpg
 	convert $< -resize 600x200^ -gravity center -extent 300x200-150+0 $@
@@ -118,6 +116,9 @@ dist/img/val-3.jpg: VID_20181121_141159.mp4
 
 dist/img/val-4.jpg: dist/photos/full/242989947_902803300666398_4415379739264788769_n.jpg
 	magick $< -resize 1280x -crop '1280x512+0+%[fx:40/100*(h-512)]' $@
+
+dist/img/icons/%.svg: node_modules/icomoon-free-npm/SVG/%.svg
+	cat $< | sed 's/<svg /<svg id="icon" /;s/ fill="#000000"//' > $@
 
 dist/img/icons/instagram.png:
 	curl 'https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png' | convert - -resize 16x $@

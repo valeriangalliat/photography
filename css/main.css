@@ -42,7 +42,7 @@ h1 small {
     }
 }
 
-.content {
+.content, footer {
     max-width: 60rem;
 }
 
@@ -51,7 +51,11 @@ img {
     height: auto;
 }
 
-.home img {
+footer img {
+    vertical-align: top;
+}
+
+.home .content img {
     max-width: 24%;
 }
 

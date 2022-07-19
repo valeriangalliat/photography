@@ -25,3 +25,25 @@ addEventListener('load', () => {
     mouseSwipe.onResize()
   }, 200))
 })
+
+const isBrowserDark = matchMedia && matchMedia('(prefers-color-scheme: dark)').matches
+
+for (const button of Array.from(document.querySelectorAll('.change-color-theme'))) {
+  if (document.documentElement.classList.contains('dark')) {
+    button.textContent = '🌞'
+  }
+
+  button.addEventListener('click', () => {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark')
+      document.documentElement.classList.add('light')
+      button.textContent = '🌝'
+      localStorage.theme = 'light'
+    } else {
+      document.documentElement.classList.remove('light')
+      document.documentElement.classList.add('dark')
+      button.textContent = '🌞'
+      localStorage.theme = 'dark'
+    }
+  })
+}
