@@ -19,9 +19,18 @@ If you want to know more about me, [read this](/about.md).
 !:P2540952 /beer.md
 !:P2580426 /beer.md
 
+## December 2021
+
+### [🏝 Belize](/2021/2021-12-15-belize.md)
+
+!:P2760544 /2021/2021-12-15-belize.md
+!:P2760551 /2021/2021-12-15-belize.md
+!:P2760649 /2021/2021-12-15-belize.md
+!:P2760692 /2021/2021-12-15-belize.md
+
 ## October 2021
 
-### [Owl's Head](/2021/2021-10-24-owls-head.md)
+### [🦉 Owl's Head](/2021/2021-10-24-owls-head.md)
 
 !:P2760382 /2021/2021-10-24-owls-head.md
 !:P2760396 /2021/2021-10-24-owls-head.md
