@@ -19,6 +19,40 @@ If you want to know more about me, [read this](/about.md).
 !:P2540952 /beer.md
 !:P2580426 /beer.md
 
+## July 2022
+
+### [🦍 Mont Gorille](/2022/2022-07-16-mont-gorille.md)
+
+!:P2770682 /2022/2022-07-16-mont-gorille.md
+!:P2770697 /2022/2022-07-16-mont-gorille.md
+!:P2770709 /2022/2022-07-16-mont-gorille.md
+!:P2770742 /2022/2022-07-16-mont-gorille.md
+
+## June 2022
+
+### [🐳 Gaspésie](/2022/2022-06-24-gaspesie.md)
+
+!:P2770453 /2022/2022-06-24-gaspesie.md
+!:P2770481 /2022/2022-06-24-gaspesie.md
+!:P2770502 /2022/2022-06-24-gaspesie.md
+!:P2770668 /2022/2022-06-24-gaspesie.md
+
+### [🏕 Montagne Blanche](/2022/2022-06-04-montagne-blanche.md)
+
+!:P2770254 /2022/2022-06-04-montagne-blanche.md
+!:P2770258 /2022/2022-06-04-montagne-blanche.md
+!:P2770263 /2022/2022-06-04-montagne-blanche.md
+!:P2770264 /2022/2022-06-04-montagne-blanche.md
+
+## April 2022
+
+### [☃️ Mauricie National Park](/2022/2022-04-16-mauricie-national-park.md)
+
+!:P2770085 /2022/2022-04-16-mauricie-national-park.md
+!:P2770092 /2022/2022-04-16-mauricie-national-park.md
+!:P2770095 /2022/2022-04-16-mauricie-national-park.md
+!:P2770102 /2022/2022-04-16-mauricie-national-park.md
+
 ## December 2021
 
 ### [🏝 Belize](/2021/2021-12-15-belize.md)

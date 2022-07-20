@@ -74,6 +74,7 @@ cache/render-photo-pages-flag: $(PHOTOS_HD) head.html foot.html
 	./scripts/render-photo-pages
 
 dist/%.html: %.md head.html foot.html | $(PHOTOS_HD) $(PHOTOS_THUMB)
+	mkdir -p $$(dirname $@)
 	./scripts/render $< > $@
 
 dist/css/normalize.css: node_modules/normalize.css/normalize.css
