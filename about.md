@@ -30,7 +30,10 @@ setup is definitely worth the tradeoff.
 
 ## Contact
 
-If you want to use some of my pictures for your own work, **contact me**! 🧡
+Feel free to use any of the pictures here for your own noncommercial
+work, just add a link to this website. 🧡
+
+For high resolution versions and commercial work, **contact me**!
 
 <table>
   <tr>
